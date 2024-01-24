@@ -3,4 +3,10 @@
 @tailwind utilities;
 
 
+.hero__section__left{
+    width: 50%;
+}
 
+.hero__section__right {
+    width: 50%;
+}

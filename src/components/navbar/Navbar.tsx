@@ -19,7 +19,7 @@ const Navbar = () => {
           />
         </div>
         <div className="nav-right flex items-center">
-          <div>
+          <div className="cursor-pointer">
             <Image
               src={MOON}
               alt="dark mode"
@@ -28,7 +28,7 @@ const Navbar = () => {
               className={styles.thememode}
             />
           </div>
-          <div className="ml-3">
+          <div className="ml-3 cursor-pointer">
             <Image
               src={MENU}
               alt="dark mode"
