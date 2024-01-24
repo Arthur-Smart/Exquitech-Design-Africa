@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import STAR from "../../public/images/star.svg";
 import CODEIMAGE from "../../public/images/vscode.png";
+import INFOICON from "../../public/images/info.svg";
+import QUESTIONiMAGE from "../../public/images/question.jpg";
 
 export default function Home() {
   const stars = [
@@ -71,6 +73,40 @@ export default function Home() {
             src={CODEIMAGE}
             alt=""
           />
+        </div>
+      </section>
+      <section className="more__info__section container rounded-lg bg-[#9b51e0] p-[35px]">
+        <div className="flex items-center">
+          <p className="text-white">What you should envision</p>
+          <Image
+            src={INFOICON}
+            alt="Exquitech Info"
+            width={20}
+            height={20}
+            className="info__icon"
+          />
+        </div>
+
+        <h1 className="text-white font-bold text-4xl mt-10 leading-[60px]">
+          Advance your business with a software solution and good <br></br>{" "}
+          Digital Marketing Strategies.
+        </h1>
+        <div className="flex items-center mt-10">
+          <Image
+            src={QUESTIONiMAGE}
+            alt="Exquitech Design Africa"
+            height={60}
+            width={60}
+            className="question__image"
+          />
+          <div className="ml-2">
+            <h4 className="text-white font-bold">How do you do this?</h4>
+            <p className="text-white text-[14px]">
+              Aligning with a proficient company that offers quality software
+              and effective digital marketing can supercharge your business
+              success like us.
+            </p>
+          </div>
         </div>
       </section>
     </main>
