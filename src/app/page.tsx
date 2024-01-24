@@ -75,7 +75,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="more__info__section container rounded-lg bg-[#9b51e0] p-[35px]">
+      <section className="more__info__section container rounded-lg  bg-gradient-to-r from-indigo-700 to-indigo-500 p-[35px]">
         <div className="flex items-center">
           <p className="text-white">What you should envision</p>
           <Image
