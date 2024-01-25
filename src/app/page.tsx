@@ -8,6 +8,7 @@ import SOFTWARE from "../../public/images/codes.jpg";
 import MOBILEDEV from "../../public/images/moapp.jpg";
 import DESIGN from "../../public/images/design.jpg";
 import PATTERNS from "../../public/images/bg.png";
+import ODOO from "../../public/images/odoo.png";
 import LottieAnimation from "@/components/LottieAnimation";
 
 export default function Home() {
@@ -233,6 +234,42 @@ export default function Home() {
                 scientific data analysis.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="container flex flex-col items-center justify-center">
+        <h1 className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold ">
+          We also work with Odoo ERP software to serve you best
+        </h1>
+        <p className="text-center px-2">
+          An excellent software for your business needs, but you need an expert
+          to intergrate it for you. We do Odoo implementation.
+        </p>
+        <div className="odoo__wrapper mt-7 flex justify-between">
+          <div className="odoo__left">
+            <Image
+              src={ODOO}
+              alt="Odoo for your business"
+              width={1000}
+              height={1000}
+              className="odoo__image"
+            />
+          </div>
+          <div className="odoo__right">
+            <h1 className="text-3xl font-bold text-zinc-500">It is free !</h1>
+            <p className="text-zinc-500 mt-4 text-[15px]">
+              We give complex and simple ERP implementation services to
+              different Organization globally. We implement Odoo ERP system
+              based on clients need. With Odoo we are able to bring into ease
+              all of your Human Resource Functions, Accounting functions, Sales
+              & purchase and Project management into a one base software. Apart
+              from Odoo implementation, We do Odoo development. That is to
+              develop addition modules that adds to the functionalities of the
+              ERP systems.
+            </p>
+            <button className="odoo__btn mt-5 py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
+              Get started
+            </button>
           </div>
         </div>
       </section>
