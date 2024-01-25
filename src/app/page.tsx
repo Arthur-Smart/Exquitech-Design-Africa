@@ -9,6 +9,12 @@ import MOBILEDEV from "../../public/images/moapp.jpg";
 import DESIGN from "../../public/images/design.jpg";
 import PATTERNS from "../../public/images/bg.png";
 import ODOO from "../../public/images/odoo.png";
+import DESIGNICON from "../../public/images/design.svg";
+import SUPPORTICON from "../../public/images/support.svg";
+import INTERGRATIONS from "../../public/images/integration.svg";
+import REPORTICON from "../../public/images/report.svg";
+import TIMEICON from "../../public/images/time.svg";
+import MANAGEICON from "../../public/images/management.svg";
 import LottieAnimation from "@/components/LottieAnimation";
 
 export default function Home() {
@@ -267,9 +273,114 @@ export default function Home() {
               develop addition modules that adds to the functionalities of the
               ERP systems.
             </p>
-            <button className="odoo__btn mt-5 py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
+            <button className="odoo__btn mt-[30px] py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
               Get started
             </button>
+          </div>
+        </div>
+      </section>
+      <section className="container rounded-lg flex flex-col items-center justify-center bg-gradient-to-r from-indigo-700 to-indigo-500 p-[20px]">
+        <h1 className="text-white font-bold text-2xl text-center">
+          Wondering how we make it all happen?
+        </h1>
+        <p className="text-white">
+          We craft web, mobile, and ERP apps, aligned with client NEEDS,ensuring
+          smooth business operations through superior solutions.
+        </p>
+        <div className="processes__wrapper mt-10">
+          <div className="process__wrapper flex items-start bg-white p-7 flex rounded-md">
+            <Image
+              src={DESIGNICON}
+              alt="Design and development"
+              width={40}
+              height={40}
+            />
+            <div className="ml-2">
+              <h1 className="font-semibold text-lg">Design and development</h1>
+              <p className="text-[15px] text-zinc-600">
+                The client shapes the application's aesthetics, and We execute
+                their vision through the development process.
+              </p>
+            </div>
+          </div>
+          <div className="process__wrapper items-start flex bg-white p-7 flex rounded-md">
+            <Image
+              src={REPORTICON}
+              alt="Design and development"
+              width={30}
+              height={30}
+            />
+            <div className="ml-2">
+              <h1 className="font-semibold text-lg">Reporting & analysis</h1>
+              <p className="text-[15px] text-zinc-600">
+                Reporting plays a pivotal role in evaluating system
+                effectiveness. Automated report generation and distribution are
+                crucial components.
+              </p>
+            </div>
+          </div>
+          <div className="process__wrapper flex items-start bg-white p-7 flex rounded-md">
+            <Image
+              src={MANAGEICON}
+              alt="Design and development"
+              width={40}
+              height={40}
+            />
+            <div className="ml-2">
+              <h1 className="font-semibold text-lg">
+                Administration & Promotion
+              </h1>
+              <p className="text-[15px] text-zinc-600">
+                Systems that gauge personnel and marketing effectiveness by
+                leveraging the company's knowledge repository.
+              </p>
+            </div>
+          </div>
+          <div className="process__wrapper flex items-start bg-white p-7 flex rounded-md">
+            <Image
+              src={INTERGRATIONS}
+              alt="Design and development"
+              width={40}
+              height={40}
+            />
+            <div className="ml-2">
+              <h1 className="font-semibold text-lg">Integrations</h1>
+              <p className="text-[15px] text-zinc-600">
+                Integrations with payment systems and external software to
+                ensure seamless cross-platform communication.
+              </p>
+            </div>
+          </div>
+          <div className="process__wrapper flex items-start bg-white p-7 flex rounded-md">
+            <Image
+              src={SUPPORTICON}
+              alt="Design and development"
+              width={40}
+              height={40}
+            />
+            <div className="ml-2">
+              <h1 className="font-semibold text-gl">Support</h1>
+              <p className="text-[15px] text-zinc-600">
+                We offer comprehensive development support, including updates to
+                align with emerging technologies
+              </p>
+            </div>
+          </div>
+          <div className="process__wrapper flex items-start items-top bg-white p-7 flex rounded-md">
+            <Image
+              src={TIMEICON}
+              alt="Design and development"
+              width={40}
+              height={40}
+            />
+            <div className="ml-2">
+              <h1 className="font-semibold text-lg">Real time notifications</h1>
+              <p className="text-[15px] text-zinc-600">
+                Access real-time data on your mobile, desktop, or web
+                application, enhanced with analysis and progress-tracking
+                features.
+              </p>
+            </div>
           </div>
         </div>
       </section>

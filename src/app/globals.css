@@ -101,3 +101,10 @@ transition: all ease-in .2s;
         height: 100%;
         border-radius: 7px;
 }
+
+.processes__wrapper{
+    width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        grid-gap: 7px;
+}
