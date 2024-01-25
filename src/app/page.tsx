@@ -7,7 +7,7 @@ import QUESTIONiMAGE from "../../public/images/question.jpg";
 import SOFTWARE from "../../public/images/codes.jpg";
 import MOBILEDEV from "../../public/images/moapp.jpg";
 import DESIGN from "../../public/images/design.jpg";
-import SEPARATOR from "../../public/images/separater.png";
+import PATTERNS from "../../public/images/bg.png";
 import LottieAnimation from "@/components/LottieAnimation";
 
 export default function Home() {
@@ -113,6 +113,13 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <Image
+          src={PATTERNS}
+          alt="About Exquitech Design africa"
+          width={500}
+          height={100}
+          className="pattern__image"
+        />
       </section>
       <section className="services container flex flex-col items-center justify-center py-14">
         <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600 text-3xl font-bold ">
@@ -186,7 +193,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container flex flex-col items-center justify-center py-10">
+      <section className="container flex flex-col items-center justify-center py-6">
         <p className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold ">
           {" "}
           Why you need a good application
@@ -201,7 +208,7 @@ export default function Home() {
           </div>
           <div className="why__right mt-[60px]">
             <div>
-              <h1 className="font-bold text-xl text-zinc-600">Efficiency</h1>
+              <h1 className="font-bold text-lg text-zinc-600">Efficiency</h1>
               <p className="text-zinc-500">
                 Good software helps you get things done faster and more
                 efficiently. It should be easy to use, reliable, and efficient
@@ -209,11 +216,21 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-[30px]">
-              <h1 className="font-bold text-xl text-zinc-600">Efficiency</h1>
+              <h1 className="font-bold text-lg text-zinc-600">Productivity</h1>
               <p className="text-zinc-500">
-                Good software helps you get things done faster and more
-                efficiently. It should be easy to use, reliable, and efficient
-                at performing its intended tasks.
+                Good software can help increase productivity by automating
+                tasks, providing tools and features that make it easier to get
+                work done, and eliminating bottlenecks and inefficiencies in
+                your workflow.
+              </p>
+            </div>
+            <div className="mt-[30px]">
+              <h1 className="font-bold text-lg text-zinc-600">Accuracy</h1>
+              <p className="text-zinc-500">
+                Good software can help ensure that your work is accurate and
+                error-free, which is especially important for tasks that require
+                a high level of precision, such as financial calculations or
+                scientific data analysis.
               </p>
             </div>
           </div>
