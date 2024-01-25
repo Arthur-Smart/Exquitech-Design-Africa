@@ -17,3 +17,35 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+.services_wrapper{
+    width:100%;
+    display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        grid-gap: 7px;
+}
+
+.service__card{
+    box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.54);
+        -webkit-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.54);
+        -moz-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.54);
+}
+
+.service__image{
+    width:100%;
+    height:30vh;
+    border-radius:7px;
+    object-fit: cover;
+}
+
+.why__left{
+    width:50%;
+}
+
+.why__right {
+    width: 50%;
+}
+
+.separator{
+    height:100px;
+}

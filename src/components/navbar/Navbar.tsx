@@ -7,7 +7,7 @@ import MENU from "../../../public/images/menu-icon.svg";
 
 const Navbar = () => {
   return (
-    <div
+    <nav
       className={`${styles.navbar} flex items-center justify-center py-2 bg-white`}
     >
       <div className="container flex items-center justify-between">
@@ -41,7 +41,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
