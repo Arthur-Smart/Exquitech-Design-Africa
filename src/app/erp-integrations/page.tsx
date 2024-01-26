@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./erp.module.css";
 import Image from "next/image";
+import ErpAnimation from "@/components/ErpAnimation";
 
 const page = () => {
   return (
@@ -18,12 +19,14 @@ const page = () => {
             | School & Hospital ERP | Integrations
           </p>
           <button
-            className={`${styles.demo__btn} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`}
+            className={`${styles.demo__btn} py-3 px-10 mt-11 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`}
           >
             Request for a demo
           </button>
         </div>
-        <div className={styles.erp__hero__right}></div>
+        <div className={styles.erp__hero__right}>
+          <ErpAnimation />
+        </div>
       </section>
       <section
         className={`${styles.solutions__wrapper} container rounded-lg  bg-gradient-to-r from-indigo-700 to-indigo-500 py-[45px] px-4 md:px-[40px]`}
