@@ -15,6 +15,7 @@ import INTERGRATIONS from "../../public/images/integration.svg";
 import REPORTICON from "../../public/images/report.svg";
 import TIMEICON from "../../public/images/time.svg";
 import MANAGEICON from "../../public/images/management.svg";
+import BOX from "../../public/images/box.png";
 import LottieAnimation from "@/components/LottieAnimation";
 
 export default function Home() {
@@ -383,6 +384,49 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="container flex flex-col items-center justify-center py-11">
+        <h1 className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold ">
+          {" "}
+          How much do we charge for our services
+        </h1>
+        <p className="text-center text-zinc-500 text-[15px]">
+          We value the value that our solutions will bring to you. The charges
+          we demand can be challenging but they is alway a negotiating and
+          bargaining oppotunity. Cost can be varing depending on the features
+          you want the solution to have but we ensure that we are both in an
+          equal position of benefit. There may be some uncharged service as well
+          depending on the nature of the software solution that the client
+          wants. Regular updates will also be charged but not all updates. We
+          are looking forward to see your business evolve.
+        </p>
+      </section>
+      <section className="py-11 mt-[90px] position-relative container flex flex-col items-center justify-center">
+        <h1 className="font-bold text-2xl text-gray-800">
+          Looking for a system, ecommerce , mobile app or digital marketing
+          experts?
+        </h1>
+        <p>
+          Book a free consultation session with us and lets discuss on what you
+          need.
+        </p>
+        <div className="flex mt-7">
+          <a href="#">
+            <button className="py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-blue-500 button-border">
+              Call us now
+            </button>
+          </a>
+          <button className="py-3 px-10 mt-2 rounded-md border-blue-500 button-border ml-3">
+            or whatsApp us now
+          </button>
+        </div>
+        <Image
+          src={BOX}
+          height={400}
+          width={800}
+          alt="Free consultation"
+          className="box"
+        />
       </section>
     </main>
   );
