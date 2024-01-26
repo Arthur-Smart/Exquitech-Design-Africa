@@ -35,6 +35,61 @@ const page = () => {
           </button>
         </div>
       </section>
+      <section
+        className={`${styles.web__services__wrapper} container rounded-lg  bg-gradient-to-r from-indigo-700 to-indigo-500 p-[45px]`}
+      >
+        <div className="web__service flex flex-col items-center justify-center">
+          <Image
+            src="./images/developer-team.svg"
+            alt="Website development"
+            width={350}
+            height={350}
+            // className={styles.web__service__image}
+          />
+          <h1 className="text-white font-semibold text-center mt-5">
+            WEBSITE DEVELOPMENT
+          </h1>
+          <p className="text-white text-[14px] text-center">
+            We believe that professional web development is an art and science,
+            and we are dedicated to crafting exceptional online experiences that
+            not only meet our clients' needs but also exceed their expectations
+          </p>
+        </div>
+        <div className="web__service flex flex-col items-center justify-center">
+          <Image
+            src="./images/web-maintainace.svg"
+            alt="Website development"
+            width={350}
+            height={350}
+          />
+          <h1 className="text-white font-semibold text-center mt-5">
+            WEBSITE MAINTENANCE
+          </h1>
+          <p className="text-white text-[14px] text-center">
+            We are committed to providing reliable and comprehensive website
+            maintenance services, ensuring that your online presence remains
+            secure, up-to-date, and fully functional, so you can focus on
+            growing your business.
+          </p>
+        </div>
+        <div className="web__service flex flex-col items-center justify-center">
+          <Image
+            src="./images/improvements.svg"
+            alt="Website development"
+            width={350}
+            height={350}
+          />
+          <h1 className="text-white font-semibold text-center mt-5">
+            WEBSITE IMPROVEMENT
+          </h1>
+          <p className="text-white text-[14px] text-center">
+            We are passionate about enhancing your website's performance and
+            user experience. Our goal is to continuously analyze, innovate, and
+            implement improvements that help your online presence evolve and
+            thrive, meeting the changing demands of your audience and industry.
+          </p>
+        </div>
+      </section>
     </main>
   );
 };

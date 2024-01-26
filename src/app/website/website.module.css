@@ -41,3 +41,14 @@
     border: 1px solid gray;
     transition: all ease-in .3s;
 }
+
+.web__services__wrapper{
+    width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        grid-gap: 10px;
+}
+
+.web__service__image{
+    width:500px;
+}
