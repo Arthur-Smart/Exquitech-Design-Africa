@@ -173,6 +173,38 @@ const page = () => {
           </div>
         </div>
       </section>
+      <section className="container action py-11 flex items-center">
+        <div className={`${styles.action_left}`}>
+          <div
+            className={`${styles.banner_holder} flex items-center justify-center cursor-pointer`}
+          >
+            <Image
+              src="./images/player.svg"
+              width={70}
+              height={70}
+              alt="Hospital POS solution"
+              className={`${styles.player__btn}`}
+            />
+            <div className={`${styles.gradient__banner}`}></div>
+            <Image
+              src="./images/demo.svg"
+              alt="E-health POS demo"
+              width={400}
+              height={40}
+              className={styles.demo__pos__image}
+            />
+          </div>
+        </div>
+        <div className={`${styles.action_right}`}>
+          <h1 className="text-zinc-900 font-semibold text-3xl">
+            See our Exqui E-health POS in<br></br> action
+          </h1>
+          <p className="mt-4 text-zinc-500">
+            Learn abour Exqui E-health solution and what are some of the
+            <br></br>benefits it comes with.
+          </p>
+        </div>
+      </section>
     </main>
   );
 };
