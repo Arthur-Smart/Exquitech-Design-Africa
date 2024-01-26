@@ -401,7 +401,7 @@ export default function Home() {
           are looking forward to see your business evolve.
         </p>
       </section>
-      <section className="py-11 mt-[90px] position-relative container flex flex-col items-center justify-center">
+      <section className="call__contact__btn container flex flex-col items-center justify-center">
         <h1 className="font-bold text-2xl text-gray-800">
           Looking for a system, ecommerce , mobile app or digital marketing
           experts?
@@ -412,11 +412,11 @@ export default function Home() {
         </p>
         <div className="flex mt-7">
           <a href="#">
-            <button className="py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-blue-500 button-border">
+            <button className="call__us__btn py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-blue-500 button-border">
               Call us now
             </button>
           </a>
-          <button className="py-3 px-10 mt-2 rounded-md border-blue-500 button-border ml-3">
+          <button className="py-3 px-10 mt-2 rounded-md whatsapp__btn ml-3">
             or whatsApp us now
           </button>
         </div>
