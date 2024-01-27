@@ -25,9 +25,7 @@ const page = () => {
           </p>
           <p className="mt-2">
             <strong>
-              <Link href="mailto:react777@gmail.com">
-                Click here to call us:
-              </Link>
+              <Link href="tel:+254742068914">Click here to call us:</Link>
             </strong>
             For any inquiries and service proposal or any technical consultaion
           </p>
