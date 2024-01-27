@@ -159,12 +159,22 @@ const page = () => {
 
             <h3 className="mt-5">Package services</h3>
             <div className="flex flex-col items-center justify-center">
-              <p>Social Media Management (2-3 Platforms)</p>
-              <p>Content Creation (2-3 Posts per Week)</p>
-              <p>Social Media Advertising (Basic Ad Campaigns)</p>
-              <p>Basic SEO (Keyword Research, On-Page Optimization)</p>
-              <p>Monthly Performance Reports</p>
-              <p>Email Marketing (Newsletter Campaigns)</p>
+              <p className="text-center">
+                Social Media Management (2-3 Platforms)
+              </p>
+              <p className="text-center">
+                Content Creation (2-3 Posts per Week)
+              </p>
+              <p className="text-center">
+                Social Media Advertising (Basic Ad Campaigns)
+              </p>
+              <p className="text-center">
+                Basic SEO (Keyword Research, On-Page Optimization)
+              </p>
+              <p className="text-center">Monthly Performance Reports</p>
+              <p className="text-center">
+                Email Marketing (Newsletter Campaigns)
+              </p>
             </div>
           </div>
           <div
@@ -179,14 +189,24 @@ const page = () => {
 
             <h3 className="mt-5">Package services</h3>
             <div className="flex flex-col items-center justify-center">
-              <p>Comprehensive Social Media Management (4-5 Platforms)</p>
-              <p>Content Creation (3-5 Posts per Week)</p>
-              <p>
+              <p className="text-center">
+                Comprehensive Social Media Management (4-5 Platforms)
+              </p>
+              <p className="text-center">
+                Content Creation (3-5 Posts per Week)
+              </p>
+              <p className="text-center">
                 Advanced Social Media Advertising (Ad Campaigns, Retargeting)
               </p>
-              <p>In-Depth Keyword Analysis and Strategy</p>
-              <p>Detailed Monthly Analytics and Recommendations</p>
-              <p>Email Marketing (Segmentation, Automation)</p>
+              <p className="text-center">
+                In-Depth Keyword Analysis and Strategy
+              </p>
+              <p className="text-center">
+                Detailed Monthly Analytics and Recommendations
+              </p>
+              <p className="text-center">
+                Email Marketing (Segmentation, Automation)
+              </p>
             </div>
           </div>
           <div
@@ -206,14 +226,22 @@ const page = () => {
 
             <h3 className="mt-5">Package services</h3>
             <div className="flex flex-col items-center justify-center">
-              <p>Extensive Social Media Management (6+ Platforms)</p>
-              <p>Premium Content Creation (5-7 Posts per Week)</p>
-              <p>
+              <p className="text-center">
+                Extensive Social Media Management (6+ Platforms)
+              </p>
+              <p className="text-center">
+                Premium Content Creation (5-7 Posts per Week)
+              </p>
+              <p className="text-center">
                 Advanced Social Media Advertising (Multi-Channel Advertising)
               </p>
-              <p>Comprehensive Competitor Analysis and Strategy</p>
-              <p>24/7 Customer Support and Consultation</p>
-              <p>Influencer Marketing Campaigns</p>
+              <p className="text-center">
+                Comprehensive Competitor Analysis and Strategy
+              </p>
+              <p className="text-center">
+                24/7 Customer Support and Consultation
+              </p>
+              <p className="text-center">Influencer Marketing Campaigns</p>
             </div>
           </div>
         </div>
