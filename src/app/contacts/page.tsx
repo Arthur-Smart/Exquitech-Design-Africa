@@ -35,7 +35,8 @@ const page = () => {
             <p className="text-zinc-600">Visit our social media platform</p>
             <div className="mt-2 flex flex-wrap gap-2">
               <Link
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100064319250841"
+                target="_blank"
                 className="py-2 px-4 rounded-full text-black-500/20 text-[13px] font-semibold bg-blue-500/20"
               >
                 Facebook
@@ -52,10 +53,16 @@ const page = () => {
               >
                 X-twitter
               </Link>
+              <Link
+                href="#"
+                className="py-2 px-4 rounded-full text-black-500/20 text-[13px] font-semibold bg-sky-500/50"
+              >
+                LinkedIn
+              </Link>
             </div>
           </div>
         </div>
-        <div className={`${styles.contact__right}`}>
+        <div className={`${styles.contact__right} flex justify-end`}>
           <Image
             src={CONTACTIMG}
             alt="Exquitech Design Africa Contact"

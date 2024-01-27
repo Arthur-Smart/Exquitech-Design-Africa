@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./mobile.module.css";
+import Link from "next/link";
 // import te from "@/styles/te";
 
 const page = () => {
@@ -33,11 +34,13 @@ const page = () => {
             captivate visually but also intuitively respond to the needs and
             preferences of your target audience.
           </p>
-          <button
-            className={`${styles.mobile__web__btn} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`}
-          >
-            Websites
-          </button>
+          <Link href="/website">
+            <button
+              className={`${styles.mobile__web__btn} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`}
+            >
+              Websites
+            </button>
+          </Link>
         </div>
       </section>
       <section className="container flex flex-col items-center justify-center rounded-lg mb-[95px] bg-gradient-to-r from-indigo-700 to-indigo-500 p-[45px]">

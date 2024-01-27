@@ -79,7 +79,7 @@ export default function Home() {
             <p>More than 1000 customers reviews</p>
           </div>
         </div>
-        <div className="hero__section__right">
+        <div className="hero__section__right flex justify-end">
           <Image
             width={600}
             height={700}
