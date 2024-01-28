@@ -38,8 +38,8 @@
 
 .link:hover{
     padding-bottom: 10px;
-border-radius: 7px;
-color:blue;
+    border-radius: 7px;
+    color:blue;
     border-bottom: 2px solid blue;
     font-weight: 600;
 }
