@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import STAR from "../../public/images/star.svg";
@@ -17,8 +19,12 @@ import TIMEICON from "../../public/images/time.svg";
 import MANAGEICON from "../../public/images/management.svg";
 import BOX from "../../public/images/box.png";
 import LottieAnimation from "@/components/LottieAnimation";
+import { useContext } from "react";
+import { ThemeContext } from "@/context/ThemeContext";
 
 export default function Home() {
+  const { state, dispatch } = useContext(ThemeContext);
+
   const stars = [
     {
       source: STAR,
@@ -30,10 +36,22 @@ export default function Home() {
     { source: STAR, alter: "Exquitech Design Africa" },
   ];
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main
+      className={
+        state.isDarkMode == true
+          ? "dark flex flex-col items-center justify-center"
+          : "flex flex-col items-center justify-center"
+      }
+    >
       <section className="hero__section container flex mt-5 py-7">
         <div className="hero__section__left">
-          <p className="font-black text-5xl text-desc text-slate-800 ">
+          <p
+            className={
+              state.isDarkMode == true
+                ? "font-black text-5xl text-desc text-white"
+                : "font-black text-5xl text-desc text-slate-800 "
+            }
+          >
             Launch an epic website with
             <br />
             <span className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
@@ -41,7 +59,7 @@ export default function Home() {
             </span>
             <br /> in Kenya
           </p>
-          <p className="mt-2">
+          <p className={state.isDarkMode == true ? "mt-4 text-white" : "mt-4"}>
             Take your business online with us. Manage your business operation
             with our software today. We develop{" "}
             <span className="font-bold">websites, software, mobile apps </span>{" "}
@@ -76,7 +94,9 @@ export default function Home() {
               ))}
             </div>
 
-            <p>More than 1000 customers reviews</p>
+            <p className={state.isDarkMode == true ? "text-white" : ""}>
+              More than 1000 customers reviews
+            </p>
           </div>
         </div>
         <div className="hero__section__right flex justify-end">
@@ -133,12 +153,24 @@ export default function Home() {
         <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600 text-3xl font-bold ">
           Our service packages
         </h1>
-        <p className="mb-7 text-center px-2">
+        <p
+          className={
+            state.isDarkMode == true
+              ? "mb-7 text-center px-2 text-white"
+              : "mb-7 text-center px-2"
+          }
+        >
           Excellent Web apps | Portals | Mobile apps | Website | Software | ICT
           solutions and consultancy for you
         </p>
         <div className="services_wrapper">
-          <div className="service__card rounded-md p-2 flex flex-col items-center ">
+          <div
+            className={
+              state.isDarkMode == true
+                ? "service__card__dark rounded-md p-2 flex flex-col items-center"
+                : "service__card rounded-md p-2 flex flex-col items-center"
+            }
+          >
             <Image
               src={SOFTWARE}
               alt="Software development"
@@ -150,7 +182,13 @@ export default function Home() {
               <h2 className="text-lg py-1 font-bold text-transparent  bg-clip-text bg-gradient-to-r from-pink-400 to-blue-600">
                 Software development
               </h2>
-              <p className="text-gray-500 text-[15px]">
+              <p
+                className={
+                  state.isDarkMode
+                    ? "text-gray-500 text-[15px] text-white"
+                    : "text-gray-500 text-[15px]"
+                }
+              >
                 Unlock the full potential of the digital realm with our expert
                 web and web app development services. We craft seamless online
                 experiences, harnessing cutting-edge technology to bring your
@@ -159,7 +197,13 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="service__card rounded-md p-2 flex flex-col items-center">
+          <div
+            className={
+              state.isDarkMode == true
+                ? "service__card__dark rounded-md p-2 flex flex-col items-center"
+                : "service__card rounded-md p-2 flex flex-col items-center"
+            }
+          >
             <Image
               src={MOBILEDEV}
               alt="Software development"
@@ -171,7 +215,13 @@ export default function Home() {
               <h2 className="text-lg py-1 font-bold text-transparent  bg-clip-text bg-gradient-to-r from-pink-400 to-blue-600">
                 Mobile apps development
               </h2>
-              <p className="text-gray-500 text-[15px]">
+              <p
+                className={
+                  state.isDarkMode
+                    ? "text-gray-500 text-[15px] text-white"
+                    : "text-gray-500 text-[15px]"
+                }
+              >
                 Elevate your brand across Android and iOS platforms with our
                 exceptional mobile app development. We create immersive,
                 user-centric apps that seamlessly blend functionality and
@@ -179,7 +229,13 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="service__card rounded-md p-2 flex flex-col items-center ">
+          <div
+            className={
+              state.isDarkMode == true
+                ? "service__card__dark rounded-md p-2 flex flex-col items-center"
+                : "service__card rounded-md p-2 flex flex-col items-center"
+            }
+          >
             <Image
               src={DESIGN}
               alt="Software development"
@@ -191,7 +247,13 @@ export default function Home() {
               <h2 className="text-lg py-1 font-bold text-transparent  bg-clip-text bg-gradient-to-r from-pink-400 to-blue-600">
                 Digital marketing / Designing
               </h2>
-              <p className="text-gray-500 text-[15px]">
+              <p
+                className={
+                  state.isDarkMode
+                    ? "text-gray-500 text-[15px] text-white"
+                    : "text-gray-500 text-[15px]"
+                }
+              >
                 Supercharge your brand with our holistic digital marketing and
                 design expertise. We blend strategic campaigns with captivating
                 design to elevate your online presence and drive exceptional
@@ -206,7 +268,11 @@ export default function Home() {
           {" "}
           Why you need a good application
         </p>
-        <p className="text-center">
+        <p
+          className={
+            state.isDarkMode == true ? "text-white text-center" : "text-center"
+          }
+        >
           A good software can help you work more effectively and efficiently,
           save time and money, and achieve better results.
         </p>
@@ -216,16 +282,32 @@ export default function Home() {
           </div>
           <div className="why__right mt-[60px]">
             <div>
-              <h1 className="font-bold text-lg text-zinc-600">Efficiency</h1>
-              <p className="text-zinc-500">
+              <h1
+                className={
+                  state.isDarkMode
+                    ? "font-bold text-lg text-white"
+                    : "font-bold text-lg text-zinc-600"
+                }
+              >
+                Efficiency
+              </h1>
+              <p className={state.isDarkMode ? "text-white" : "text-zinc-500"}>
                 Good software helps you get things done faster and more
                 efficiently. It should be easy to use, reliable, and efficient
                 at performing its intended tasks.
               </p>
             </div>
             <div className="mt-[30px]">
-              <h1 className="font-bold text-lg text-zinc-600">Productivity</h1>
-              <p className="text-zinc-500">
+              <h1
+                className={
+                  state.isDarkMode
+                    ? "font-bold text-lg text-white"
+                    : "font-bold text-lg text-zinc-600"
+                }
+              >
+                Productivity
+              </h1>
+              <p className={state.isDarkMode ? "text-white" : "text-zinc-500"}>
                 Good software can help increase productivity by automating
                 tasks, providing tools and features that make it easier to get
                 work done, and eliminating bottlenecks and inefficiencies in
@@ -233,8 +315,16 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-[30px]">
-              <h1 className="font-bold text-lg text-zinc-600">Accuracy</h1>
-              <p className="text-zinc-500">
+              <h1
+                className={
+                  state.isDarkMode
+                    ? "font-bold text-lg text-white"
+                    : "font-bold text-lg text-zinc-600"
+                }
+              >
+                Accuracy
+              </h1>
+              <p className={state.isDarkMode ? "text-white" : "text-zinc-500"}>
                 Good software can help ensure that your work is accurate and
                 error-free, which is especially important for tasks that require
                 a high level of precision, such as financial calculations or
@@ -248,7 +338,13 @@ export default function Home() {
         <h1 className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold ">
           We also work with Odoo ERP software to serve you best
         </h1>
-        <p className="text-center px-2">
+        <p
+          className={
+            state.isDarkMode == true
+              ? "text-center px-2 text-white"
+              : "text-center px-2"
+          }
+        >
           An excellent software for your business needs, but you need an expert
           to intergrate it for you. We do Odoo implementation.
         </p>
@@ -263,8 +359,22 @@ export default function Home() {
             />
           </div>
           <div className="odoo__right">
-            <h1 className="text-3xl font-bold text-zinc-500">It is free !</h1>
-            <p className="text-zinc-500 mt-4 text-[15px]">
+            <h1
+              className={
+                state.isDarkMode == true
+                  ? "text-3xl font-bold text-white"
+                  : "text-3xl font-bold text-zinc-500"
+              }
+            >
+              It is free !
+            </h1>
+            <p
+              className={
+                state.isDarkMode == true
+                  ? "mt-4 text-[15px] text-white"
+                  : "text-zinc-500 mt-4 text-[15px]"
+              }
+            >
               We give complex and simple ERP implementation services to
               different Organization globally. We implement Odoo ERP system
               based on clients need. With Odoo we are able to bring into ease

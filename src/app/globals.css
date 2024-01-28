@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+.dark{
+    background-color: black;
+}
 
 .hero__section__left{
     width: 50%;
@@ -42,6 +45,12 @@ height:100%;
     box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.54);
         -webkit-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.54);
         -moz-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.54);
+}
+
+.service__card__dark {
+    box-shadow: 1px 1px 5px -1px rgba(255, 255, 255, 0.54);
+    -webkit-box-shadow: 1px 1px 5px -1px rgba(255, 255, 255, 0.54);
+    -moz-box-shadow: 1px 1px 5px -1px rgba(255, 255, 255, 0.54);
 }
 
 .service__image{

@@ -1,15 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import styles from "./navbar.module.css";
 import Image from "next/image";
 import LOGO from "../../../public/images/logo.png";
 import MOON from "../../../public/images/moon.svg";
 import MENU from "../../../public/images/menu-icon.svg";
 import Link from "next/link";
+import { ThemeContext } from "@/context/ThemeContext";
 
 const Navbar = () => {
   const [isOpened, setIsOpend] = useState<Boolean>(false);
+  const { state, dispatch } = useContext(ThemeContext);
 
   const handleToggle = (e: React.MouseEvent<HTMLDivElement>): void => {
     setIsOpend((prev) => !prev);
@@ -34,7 +36,10 @@ const Navbar = () => {
           />
         </div>
         <div className="nav-right flex items-center">
-          <div className="cursor-pointer">
+          <div
+            onClick={() => dispatch({ type: "TOGGLE_THEME" })}
+            className="cursor-pointer"
+          >
             <Image
               src={MOON}
               alt="dark mode"
