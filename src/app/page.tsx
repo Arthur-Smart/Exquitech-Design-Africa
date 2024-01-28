@@ -384,7 +384,13 @@ export default function Home() {
               develop addition modules that adds to the functionalities of the
               ERP systems.
             </p>
-            <button className="odoo__btn mt-[30px] py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
+            <button
+              className={
+                state.isDarkMode == true
+                  ? "odoo__btn__dark mt-[30px] py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
+                  : "odoo__btn mt-[30px] py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
+              }
+            >
               Get started
             </button>
           </div>
@@ -399,7 +405,13 @@ export default function Home() {
           smooth business operations through superior solutions.
         </p>
         <div className="processes__wrapper mt-10">
-          <div className="process__wrapper flex items-start bg-white p-7 flex rounded-md">
+          <div
+            className={
+              state.isDarkMode == true
+                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+            }
+          >
             <Image
               src={DESIGNICON}
               alt="Design and development"
@@ -408,13 +420,25 @@ export default function Home() {
             />
             <div className="ml-2">
               <h1 className="font-semibold text-lg">Design and development</h1>
-              <p className="text-[15px] text-zinc-600">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-[15px] text-white"
+                    : "text-[15px] text-zinc-600"
+                }
+              >
                 The client shapes the application's aesthetics, and We execute
                 their vision through the development process.
               </p>
             </div>
           </div>
-          <div className="process__wrapper items-start flex bg-white p-7 flex rounded-md">
+          <div
+            className={
+              state.isDarkMode == true
+                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+            }
+          >
             <Image
               src={REPORTICON}
               alt="Design and development"
@@ -423,14 +447,26 @@ export default function Home() {
             />
             <div className="ml-2">
               <h1 className="font-semibold text-lg">Reporting & analysis</h1>
-              <p className="text-[15px] text-zinc-600">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-[15px] text-white"
+                    : "text-[15px] text-zinc-600"
+                }
+              >
                 Reporting plays a pivotal role in evaluating system
                 effectiveness. Automated report generation and distribution are
                 crucial components.
               </p>
             </div>
           </div>
-          <div className="process__wrapper flex items-start bg-white p-7 flex rounded-md">
+          <div
+            className={
+              state.isDarkMode == true
+                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+            }
+          >
             <Image
               src={MANAGEICON}
               alt="Design and development"
@@ -441,13 +477,25 @@ export default function Home() {
               <h1 className="font-semibold text-lg">
                 Administration & Promotion
               </h1>
-              <p className="text-[15px] text-zinc-600">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-[15px] text-white"
+                    : "text-[15px] text-zinc-600"
+                }
+              >
                 Systems that gauge personnel and marketing effectiveness by
                 leveraging the company's knowledge repository.
               </p>
             </div>
           </div>
-          <div className="process__wrapper flex items-start bg-white p-7 flex rounded-md">
+          <div
+            className={
+              state.isDarkMode == true
+                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+            }
+          >
             <Image
               src={INTERGRATIONS}
               alt="Design and development"
@@ -456,13 +504,25 @@ export default function Home() {
             />
             <div className="ml-2">
               <h1 className="font-semibold text-lg">Integrations</h1>
-              <p className="text-[15px] text-zinc-600">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-[15px] text-white"
+                    : "text-[15px] text-zinc-600"
+                }
+              >
                 Integrations with payment systems and external software to
                 ensure seamless cross-platform communication.
               </p>
             </div>
           </div>
-          <div className="process__wrapper flex items-start bg-white p-7 flex rounded-md">
+          <div
+            className={
+              state.isDarkMode == true
+                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+            }
+          >
             <Image
               src={SUPPORTICON}
               alt="Design and development"
@@ -471,13 +531,25 @@ export default function Home() {
             />
             <div className="ml-2">
               <h1 className="font-semibold text-gl">Support</h1>
-              <p className="text-[15px] text-zinc-600">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-[15px] text-white"
+                    : "text-[15px] text-zinc-600"
+                }
+              >
                 We offer comprehensive development support, including updates to
                 align with emerging technologies
               </p>
             </div>
           </div>
-          <div className="process__wrapper flex items-start items-top bg-white p-7 flex rounded-md">
+          <div
+            className={
+              state.isDarkMode == true
+                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+            }
+          >
             <Image
               src={TIMEICON}
               alt="Design and development"
@@ -486,7 +558,13 @@ export default function Home() {
             />
             <div className="ml-2">
               <h1 className="font-semibold text-lg">Real time notifications</h1>
-              <p className="text-[15px] text-zinc-600">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-[15px] text-white"
+                    : "text-[15px] text-zinc-600"
+                }
+              >
                 Access real-time data on your mobile, desktop, or web
                 application, enhanced with analysis and progress-tracking
                 features.
@@ -500,7 +578,13 @@ export default function Home() {
           {" "}
           How much do we charge for our services
         </h1>
-        <p className="text-center text-zinc-500 text-[15px]">
+        <p
+          className={
+            state.isDarkMode
+              ? "text-center text-white text-[15px]"
+              : "text-center text-zinc-500 text-[15px]"
+          }
+        >
           We value the value that our solutions will bring to you. The charges
           we demand can be challenging but they is alway a negotiating and
           bargaining oppotunity. Cost can be varing depending on the features
@@ -512,21 +596,39 @@ export default function Home() {
         </p>
       </section>
       <section className="call__contact__btn container flex flex-col items-center justify-center">
-        <h1 className="font-bold text-2xl text-gray-800">
+        <h1
+          className={
+            state.isDarkMode == true
+              ? "font-bold text-2xl text-white"
+              : "font-bold text-2xl text-gray-800"
+          }
+        >
           Looking for a system, ecommerce , mobile app or digital marketing
           experts?
         </h1>
-        <p>
+        <p className={state.isDarkMode == true ? "text-white" : ""}>
           Book a free consultation session with us and lets discuss on what you
           need.
         </p>
         <div className="flex mt-7">
           <a href="#">
-            <button className="call__us__btn py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-blue-500 button-border">
+            <button
+              className={
+                state.isDarkMode == true
+                  ? "call__us__btn__dark py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-blue-500 button-border"
+                  : "call__us__btn py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-blue-500 button-border"
+              }
+            >
               Call us now
             </button>
           </a>
-          <button className="py-3 px-10 mt-2 rounded-md whatsapp__btn ml-3">
+          <button
+            className={
+              state.isDarkMode
+                ? "py-3 px-10 mt-2 rounded-md whatsapp__btn ml-3 text-white"
+                : "py-3 px-10 mt-2 rounded-md whatsapp__btn ml-3"
+            }
+          >
             or whatsApp us now
           </button>
         </div>
