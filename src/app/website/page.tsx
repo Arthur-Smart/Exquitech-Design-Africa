@@ -1,12 +1,22 @@
-import React from "react";
+"use client";
+
+import React, { useContext } from "react";
 import Image from "next/image";
 import styles from "./website.module.css";
 import Link from "next/link";
+import { ThemeContext } from "@/context/ThemeContext";
 // import te from "@/styles/te";
 
 const page = () => {
+  const { state } = useContext(ThemeContext);
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main
+      className={
+        state.isDarkMode == true
+          ? `${styles.dark__bg} flex flex-col items-center justify-center`
+          : "flex flex-col items-center justify-center"
+      }
+    >
       <section className="flex container py-7 website__hero">
         <div className={styles.website__left}>
           <Image
@@ -24,7 +34,13 @@ const page = () => {
           <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-4xl font-bold ">
             How we will build your website to life
           </h1>
-          <p className="mt-6 text-zinc-500">
+          <p
+            className={
+              state.isDarkMode == true
+                ? "text-white mt-6"
+                : "mt-6 text-zinc-500"
+            }
+          >
             We meticulously design and develop websites and web applications,
             starting with a detailed project vision. Our process involves
             user-centric design, cutting-edge technology, and custom-tailored
