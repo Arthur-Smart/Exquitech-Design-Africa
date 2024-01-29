@@ -28,7 +28,13 @@ const page = () => {
           />
         </div>
         <div className={`${styles.website__right} mt-11`}>
-          <p className="text-[13px]  mb-[3px] text-gray-900/20">
+          <p
+            className={
+              state.isDarkMode == true
+                ? "text-[13px]  mb-[3px] text-white/20"
+                : "text-[13px]  mb-[3px] text-gray-900/20"
+            }
+          >
             Exquitech for web development
           </p>
           <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-4xl font-bold ">
@@ -50,7 +56,11 @@ const page = () => {
           </p>
           <Link href="/mobile">
             <button
-              className={`${styles.mobile__web__btn} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`}
+              className={
+                state.isDarkMode == true
+                  ? `${styles.mobile__web__btn__dark} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`
+                  : ` ${styles.mobile__web__btn} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`
+              }
             >
               Mobile apps
             </button>
