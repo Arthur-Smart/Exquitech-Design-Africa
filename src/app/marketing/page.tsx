@@ -318,106 +318,336 @@ const page = () => {
         </div>
       </section>
       <section className="container flex flex-col py-9  items-center justify-center">
-        <h1 className="text-2xl text-zinc-700 font-bold">
+        <h1
+          className={
+            state.isDarkMode == true
+              ? "text-2xl text-white font-bold"
+              : "text-2xl text-zinc-700 font-bold"
+          }
+        >
           Get amazing services at a price that make sense
         </h1>
-        <p className="text-zinc-600">Affordable pricing with zero setup fees</p>
+        <p
+          className={
+            state.isDarkMode == true ? "text-white/50" : "text-zinc-600"
+          }
+        >
+          Affordable pricing with zero setup fees
+        </p>
         <div className={`${styles.pricing__wrapper} my-8`}>
           <div
-            className={`${styles.pricing} rounded-md bg-orange-500/20 p-6 flex flex-col items-center justify-center`}
+            className={
+              state.isDarkMode == true
+                ? `${styles.pricing__dark} rounded-md bg-red-500/20 p-6 flex flex-col items-center justify-center`
+                : `${styles.pricing} rounded-md bg-blue-500/20 p-6 flex flex-col items-center justify-center`
+            }
           >
             <div className="w-[90%] bg-orange-500/50 flex items-center justify-center flex-col py-6 rounded-md">
-              <h3 className="text-xl font-semibold">Signature Swan</h3>
-              <p className="mt-2">Fit for your starting business</p>
+              <h3
+                className={
+                  state.isDarkMode == true
+                    ? "text-xl font-semibold text-white"
+                    : "text-xl font-semibold"
+                }
+              >
+                Signature Swan
+              </h3>
+              <p
+                className={
+                  state.isDarkMode == true ? "mt-2 text-white" : "mt-2"
+                }
+              >
+                Fit for your starting business
+              </p>
             </div>
-            <h3 className="mt-4 text-xl font-semibold">Ksh 10,000</h3>
-            <p>Per month</p>
+            <h3
+              className={
+                state.isDarkMode == true
+                  ? "mt-4 text-xl font-semibold text-white"
+                  : "mt-4 text-xl font-semibold"
+              }
+            >
+              Ksh 10,000
+            </h3>
+            <p className={state.isDarkMode == true ? "text-white" : ""}>
+              Per month
+            </p>
 
-            <h3 className="mt-5">Package services</h3>
+            <h3
+              className={
+                state.isDarkMode == true
+                  ? "mt-5 font-semibold mb-2 text-white"
+                  : "mt-5 font-semibold mb-2"
+              }
+            >
+              Package services
+            </h3>
             <div className="flex flex-col items-center justify-center">
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Social Media Management (2-3 Platforms)
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Content Creation (2-3 Posts per Week)
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Social Media Advertising (Basic Ad Campaigns)
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Basic SEO (Keyword Research, On-Page Optimization)
               </p>
-              <p className="text-center">Monthly Performance Reports</p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
+                Monthly Performance Reports
+              </p>
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Email Marketing (Newsletter Campaigns)
               </p>
             </div>
           </div>
           <div
-            className={`${styles.pricing} rounded-md bg-red-500/20 p-6 flex flex-col items-center justify-center`}
+            className={
+              state.isDarkMode == true
+                ? `${styles.pricing__dark} rounded-md bg-red-500/20 p-6 flex flex-col items-center justify-center`
+                : `${styles.pricing} rounded-md bg-red-500/20 p-6 flex flex-col items-center justify-center`
+            }
           >
             <div className="w-[90%] bg-red-500/50 flex items-center justify-center flex-col py-6 rounded-md">
-              <h3 className="text-xl font-semibold">Advanced Alligator</h3>
-              <p className="mt-2">Fit for your growing business</p>
+              <h3
+                className={
+                  state.isDarkMode == true
+                    ? "text-xl font-semibold text-white"
+                    : "text-xl font-semibold"
+                }
+              >
+                Advanced Alligator
+              </h3>
+              <p
+                className={
+                  state.isDarkMode == true ? "mt-2 text-white" : "mt-2"
+                }
+              >
+                Fit for your growing business
+              </p>
             </div>
-            <h3 className="mt-4 text-xl font-semibold">Ksh 15,000</h3>
-            <p>Per month</p>
+            <h3
+              className={
+                state.isDarkMode == true
+                  ? "mt-4 text-xl font-semibold text-white"
+                  : "mt-4 text-xl font-semibold"
+              }
+            >
+              Ksh 15,000
+            </h3>
+            <p className={state.isDarkMode == true ? "text-white" : ""}>
+              Per month
+            </p>
 
-            <h3 className="mt-5">Package services</h3>
+            <h3
+              className={
+                state.isDarkMode == true
+                  ? "mt-5 font-semibold mb-2 text-white"
+                  : "mt-5 font-semibold mb-2"
+              }
+            >
+              Package services
+            </h3>
             <div className="flex flex-col items-center justify-center">
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Comprehensive Social Media Management (4-5 Platforms)
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Content Creation (3-5 Posts per Week)
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Advanced Social Media Advertising (Ad Campaigns, Retargeting)
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 In-Depth Keyword Analysis and Strategy
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Detailed Monthly Analytics and Recommendations
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Email Marketing (Segmentation, Automation)
               </p>
             </div>
           </div>
           <div
-            className={`${styles.pricing} rounded-md bg-blue-500/20 p-6 flex flex-col items-center justify-center`}
+            className={
+              state.isDarkMode == true
+                ? `${styles.pricing__dark} rounded-md bg-red-500/20 p-6 flex flex-col items-center justify-center`
+                : `${styles.pricing} rounded-md bg-blue-500/20 p-6 flex flex-col items-center justify-center`
+            }
           >
+            {" "}
             <div className="w-[90%] bg-blue-500/50 flex items-center justify-center flex-col py-6 rounded-md">
-              <h3 className="text-xl font-semibold">Elite Elephant Seal</h3>
-              <p className="mt-2">
+              <h3
+                className={
+                  state.isDarkMode == true
+                    ? "text-xl font-semibold text-white"
+                    : "text-xl font-semibold"
+                }
+              >
+                Elite Elephant Seal
+              </h3>
+              <p
+                className={
+                  state.isDarkMode == true ? "mt-2 text-white" : "mt-2"
+                }
+              >
                 Fit for your business{" "}
                 <span className="bg-green-500/50 rounded-full py-[3px] px-4 text-[13px] text-white">
                   Recommended
                 </span>
               </p>
             </div>
-            <h3 className="mt-4 text-xl font-semibold">Ksh 25,000</h3>
-            <p>Per month</p>
-
-            <h3 className="mt-5">Package services</h3>
+            <h3
+              className={
+                state.isDarkMode == true
+                  ? "mt-4 text-xl font-semibold text-white"
+                  : "mt-4 text-xl font-semibold"
+              }
+            >
+              Ksh 25,000
+            </h3>
+            <p className={state.isDarkMode == true ? "text-white" : ""}>
+              Per month
+            </p>
+            <h3
+              className={
+                state.isDarkMode == true
+                  ? "mt-5 font-semibold mb-2 text-white"
+                  : "mt-5 font-semibold mb-2"
+              }
+            >
+              Package services
+            </h3>
             <div className="flex flex-col items-center justify-center">
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Extensive Social Media Management (6+ Platforms)
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Premium Content Creation (5-7 Posts per Week)
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Advanced Social Media Advertising (Multi-Channel Advertising)
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 Comprehensive Competitor Analysis and Strategy
               </p>
-              <p className="text-center">
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
                 24/7 Customer Support and Consultation
               </p>
-              <p className="text-center">Influencer Marketing Campaigns</p>
+              <p
+                className={
+                  state.isDarkMode == true
+                    ? "text-center text-white"
+                    : "text-center"
+                }
+              >
+                Influencer Marketing Campaigns
+              </p>
             </div>
           </div>
         </div>

@@ -65,6 +65,8 @@ position: relative;
     border-radius: 7px;
 }
 
+
+
 .separator{
     width:100%;
     height:2px;
@@ -99,4 +101,19 @@ position: relative;
     height:100%;
     border:4px solid black;
     border-radius:7px;
+}
+
+.pricing__dark {
+    position: relative;
+}
+
+.pricing__dark::before {
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid white;
+    border-radius: 7px;
 }
