@@ -1,25 +1,51 @@
-import React from "react";
+"use client";
+
+import React, { useContext } from "react";
 import styles from "./erp.module.css";
 import Image from "next/image";
 import ErpAnimation from "@/components/ErpAnimation";
+import { ThemeContext } from "@/context/ThemeContext";
 
 const page = () => {
+  const { state } = useContext(ThemeContext);
   return (
-    <main className="w-full flex flex-col items-center justify-center py-9">
+    <main
+      className={
+        state.isDarkMode == true
+          ? "w-full flex flex-col items-center justify-center py-9 bg-black"
+          : "w-full flex flex-col items-center justify-center py-9"
+      }
+    >
       <section className="container flex py-7">
         <div className={styles.erp__hero__left}>
-          <p className="text-[13px]  mb-[3px] text-gray-900/20">
+          <p
+            className={
+              state.isDarkMode == true
+                ? "text-[13px] mb-[3px] text-white/50"
+                : "text-[13px]  mb-[3px] text-gray-900/20"
+            }
+          >
             Exquitech for ERPs & integrations
           </p>
           <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold ">
             Enterprice Resouce Plaining(ERP) Software & Integrations
           </h1>
-          <p className="mt-6 text-zinc-500">
+          <p
+            className={
+              state.isDarkMode == true
+                ? "mt-6 text-white"
+                : "mt-6 text-zinc-500"
+            }
+          >
             What's in for you? We offer HR ERP modules | Sales & Purchase | POS
             | School & Hospital ERP | Integrations
           </p>
           <button
-            className={`${styles.demo__btn} py-3 px-10 mt-11 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`}
+            className={
+              state.isDarkMode == true
+                ? `${styles.demo__btn__dark} py-3 px-10 mt-11 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`
+                : `${styles.demo__btn} py-3 px-10 mt-11 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`
+            }
           >
             Request for a demo
           </button>

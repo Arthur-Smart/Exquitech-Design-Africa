@@ -37,6 +37,33 @@
     border-radius: 7px;
 }
 
+.mobile__web__btn__dark {
+    position: relative;
+}
+
+.mobile__web__btn__dark::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    transition: all ease-in .2s;
+}
+
+.mobile__web__btn__dark:hover.mobile__web__btn__dark::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
 .whatsapp__btn:hover {
     border: 1px solid gray;
     transition: all ease-in .3s;

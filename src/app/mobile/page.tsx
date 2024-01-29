@@ -1,12 +1,22 @@
-import React from "react";
+"use client";
+
+import React, { useContext } from "react";
 import Image from "next/image";
 import styles from "./mobile.module.css";
 import Link from "next/link";
+import { ThemeContext } from "@/context/ThemeContext";
 // import te from "@/styles/te";
 
 const page = () => {
+  const { state } = useContext(ThemeContext);
   return (
-    <main className="flex flex-col items-center justify-center">
+    <main
+      className={
+        state.isDarkMode == true
+          ? "flex flex-col items-center justify-center bg-black"
+          : "flex flex-col items-center justify-center"
+      }
+    >
       <section className="flex container py-7 website__hero">
         <div className={styles.mobile__left}>
           <Image
@@ -18,13 +28,25 @@ const page = () => {
           />
         </div>
         <div className={`${styles.mobile__right}`}>
-          <p className="text-[13px]  mb-[3px] text-gray-900/20">
+          <p
+            className={
+              state.isDarkMode == true
+                ? "text-[13px]  mb-[3px] text-white/20"
+                : "text-[13px]  mb-[3px] text-gray-900/20"
+            }
+          >
             Exquitech for mobile apps development
           </p>
           <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-4xl font-bold ">
             How we will build your mobile app to life
           </h1>
-          <p className="mt-6 text-zinc-500">
+          <p
+            className={
+              state.isDarkMode == true
+                ? "mt-6 text-white"
+                : "mt-6 text-zinc-500"
+            }
+          >
             At our core, we are dedicated to the art and science of crafting
             exceptional mobile apps for both Android and iOS platforms. Our
             approach is marked by meticulous attention to detail, beginning with
@@ -36,7 +58,11 @@ const page = () => {
           </p>
           <Link href="/website">
             <button
-              className={`${styles.mobile__web__btn} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`}
+              className={
+                state.isDarkMode == true
+                  ? `${styles.mobile__web__btn__dark} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`
+                  : `${styles.mobile__web__btn} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border flex self-start`
+              }
             >
               Websites
             </button>
