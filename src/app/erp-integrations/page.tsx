@@ -58,7 +58,11 @@ const page = () => {
         className={`${styles.solutions__wrapper} container rounded-lg  bg-gradient-to-r from-indigo-700 to-indigo-500 py-[45px] px-4 md:px-[40px]`}
       >
         <div
-          className={`${styles.solution} items-start flex bg-white p-7 flex rounded-md`}
+          className={
+            state.isDarkMode == true
+              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+          }
         >
           <Image
             src="./images/manager.svg"
@@ -67,8 +71,22 @@ const page = () => {
             height={20}
           />
           <div className="ml-3">
-            <h1 className="font-semibold text-lg">Human Resource EPR</h1>
-            <p className="text-[15px] text-zinc-600">
+            <h1
+              className={
+                state.isDarkMode == true
+                  ? "font-semibold text-lg text-white"
+                  : "font-semibold text-lg"
+              }
+            >
+              Human Resource EPR
+            </h1>
+            <p
+              className={
+                state.isDarkMode == true
+                  ? "text-[15px] text-white"
+                  : "text-[15px] text-zinc-600"
+              }
+            >
               We provide comprehensive Human Resource ERP software, tailored to
               streamline HR processes. Our solution encompasses a wide range of
               HR features, facilitating efficient workforce management, talent
@@ -81,7 +99,11 @@ const page = () => {
           </div>
         </div>
         <div
-          className={`${styles.solution} items-start flex bg-white p-7 flex rounded-md`}
+          className={
+            state.isDarkMode == true
+              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+          }
         >
           <Image
             src="./images/sales.svg"
@@ -90,8 +112,22 @@ const page = () => {
             height={20}
           />
           <div className="ml-3">
-            <h1 className="font-semibold text-lg">Sales & Purchase</h1>
-            <p className="text-[15px] text-zinc-600">
+            <h1
+              className={
+                state.isDarkMode == true
+                  ? "font-semibold text-lg text-white"
+                  : "font-semibold text-lg"
+              }
+            >
+              Sales & Purchase
+            </h1>
+            <p
+              className={
+                state.isDarkMode == true
+                  ? "text-[15px] text-white"
+                  : "text-[15px] text-zinc-600"
+              }
+            >
               Our integrated Sales and Purchase ERP software streamlines both
               sales and procurement processes seamlessly. Features encompass
               sales order management, lead tracking, inventory control, purchase
@@ -103,7 +139,11 @@ const page = () => {
           </div>
         </div>
         <div
-          className={`${styles.solution} items-start flex bg-white p-7 flex rounded-md`}
+          className={
+            state.isDarkMode == true
+              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+          }
         >
           <Image
             src="./images/pos.svg"
@@ -112,8 +152,22 @@ const page = () => {
             height={20}
           />
           <div className="ml-3">
-            <h1 className="font-semibold text-lg">POS</h1>
-            <p className="text-[15px] text-zinc-600">
+            <h1
+              className={
+                state.isDarkMode == true
+                  ? "font-semibold text-lg text-white"
+                  : "font-semibold text-lg"
+              }
+            >
+              POS
+            </h1>
+            <p
+              className={
+                state.isDarkMode == true
+                  ? "text-[15px] text-white"
+                  : "text-[15px] text-zinc-600"
+              }
+            >
               Our Point of Sale (POS) ERP software offers a complete solution
               for businesses. It combines essential features like sales
               transaction processing, inventory management, payment processing,
@@ -127,7 +181,11 @@ const page = () => {
           </div>
         </div>
         <div
-          className={`${styles.solution} items-start flex bg-white p-7 flex rounded-md`}
+          className={
+            state.isDarkMode == true
+              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+          }
         >
           <Image
             src="./images/report2.svg"
@@ -136,8 +194,22 @@ const page = () => {
             height={20}
           />
           <div className="ml-3">
-            <h1 className="font-semibold text-lg">Schools & Hosipitals</h1>
-            <p className="text-[15px] text-zinc-600">
+            <h1
+              className={
+                state.isDarkMode == true
+                  ? "font-semibold text-lg text-white"
+                  : "font-semibold text-lg"
+              }
+            >
+              Schools & Hosipitals
+            </h1>
+            <p
+              className={
+                state.isDarkMode == true
+                  ? "text-[15px] text-white"
+                  : "text-[15px] text-zinc-600"
+              }
+            >
               Our ERP software for schools and hospitals offers tailored
               solutions to streamline operations. For schools, it includes
               features such as student enrollment, attendance tracking, grade
@@ -153,7 +225,11 @@ const page = () => {
           </div>
         </div>
         <div
-          className={`${styles.solution} items-start flex bg-white p-7 flex rounded-md`}
+          className={
+            state.isDarkMode == true
+              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+          }
         >
           <Image
             src="./images/bot.svg"
@@ -162,8 +238,22 @@ const page = () => {
             height={20}
           />
           <div className="ml-3">
-            <h1 className="font-semibold text-lg">M-pesa & Chat bots</h1>
-            <p className="text-[15px] text-zinc-600">
+            <h1
+              className={
+                state.isDarkMode == true
+                  ? "font-semibold text-lg text-white"
+                  : "font-semibold text-lg"
+              }
+            >
+              M-pesa & Chat bots
+            </h1>
+            <p
+              className={
+                state.isDarkMode == true
+                  ? "text-[15px] text-white"
+                  : "text-[15px] text-zinc-600"
+              }
+            >
               We provide integration services for a wide range of essential
               functionalities, including seamless M-Pesa payment integration,
               chatbot implementation for efficient customer support, and social
@@ -176,7 +266,11 @@ const page = () => {
           </div>
         </div>
         <div
-          className={`${styles.solution} items-start flex bg-white p-7 flex rounded-md`}
+          className={
+            state.isDarkMode == true
+              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+          }
         >
           <Image
             src="./images/cart.svg"
@@ -185,8 +279,22 @@ const page = () => {
             height={20}
           />
           <div className="ml-3">
-            <h1 className="font-semibold text-lg">E-commerce</h1>
-            <p className="text-[15px] text-zinc-600">
+            <h1
+              className={
+                state.isDarkMode == true
+                  ? "font-semibold text-lg text-white"
+                  : "font-semibold text-lg"
+              }
+            >
+              E-commerce
+            </h1>
+            <p
+              className={
+                state.isDarkMode == true
+                  ? "text-[15px] text-white"
+                  : "text-[15px] text-zinc-600"
+              }
+            >
               Our E-commerce web app is designed to revolutionize online
               shopping. With advanced features like web scraping for real-time
               product updates, personalized email notifications for promotions
@@ -211,7 +319,12 @@ const page = () => {
               alt="Hospital POS solution"
               className={`${styles.player__btn}`}
             />
-            <div className={`${styles.gradient__banner}`}></div>
+            {state.isDarkMode == true ? (
+              <div className={`${styles.gradient__banner__dark}`}></div>
+            ) : (
+              <div className={`${styles.gradient__banner}`}></div>
+            )}
+
             <Image
               src="./images/demo.svg"
               alt="E-health POS demo"
@@ -222,10 +335,22 @@ const page = () => {
           </div>
         </div>
         <div className={`${styles.action_right}`}>
-          <h1 className="text-zinc-900 font-semibold text-3xl">
+          <h1
+            className={
+              state.isDarkMode == true
+                ? "text-white font-semibold text-3xl"
+                : "text-zinc-900 font-semibold text-3xl"
+            }
+          >
             See our Exqui E-health POS in<br></br> action
           </h1>
-          <p className="mt-4 text-zinc-500">
+          <p
+            className={
+              state.isDarkMode == true
+                ? "mt-4 text-white"
+                : "mt-4 text-zinc-500"
+            }
+          >
             Learn abour Exqui E-health solution and what are some of the
             <br></br>benefits it comes with.
           </p>
