@@ -5,7 +5,9 @@ import styles from "./navbar.module.css";
 import Image from "next/image";
 import LOGO from "../../../public/images/logo.png";
 import MOON from "../../../public/images/moon.svg";
+import SUN from "../../../public/images/sunn.svg";
 import MENU from "../../../public/images/menu-icon.svg";
+import MENU_DARK from "../../../public/images/menu-dark.svg";
 import Link from "next/link";
 import { ThemeContext } from "@/context/ThemeContext";
 
@@ -23,7 +25,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.navbar} flex items-center justify-center py-2 bg-white`}
+      className={
+        state.isDarkMode == true
+          ? `${styles.navbar} flex items-center justify-center py-2 bg-black`
+          : `${styles.navbar} flex items-center justify-center py-2 bg-white`
+      }
     >
       <div className="container flex items-center justify-between">
         <div className="nav-left">
@@ -40,25 +46,45 @@ const Navbar = () => {
             onClick={() => dispatch({ type: "TOGGLE_THEME" })}
             className="cursor-pointer"
           >
-            <Image
-              src={MOON}
-              alt="dark mode"
-              width={100}
-              height={100}
-              className={styles.thememode}
-            />
+            {state.isDarkMode == true ? (
+              <Image
+                src={SUN}
+                alt="dark mode"
+                width={100}
+                height={100}
+                className={styles.thememode}
+              />
+            ) : (
+              <Image
+                src={MOON}
+                alt="dark mode"
+                width={100}
+                height={100}
+                className={styles.thememode}
+              />
+            )}
           </div>
           <div
             onClick={handleToggle}
             className="ml-3 cursor-pointer"
           >
-            <Image
-              src={MENU}
-              alt="dark mode"
-              width={100}
-              height={100}
-              className={styles.menu}
-            />
+            {state.isDarkMode == true ? (
+              <Image
+                src={MENU_DARK}
+                alt="dark mode"
+                width={100}
+                height={100}
+                className={styles.menu}
+              />
+            ) : (
+              <Image
+                src={MENU}
+                alt="dark mode"
+                width={100}
+                height={100}
+                className={styles.menu}
+              />
+            )}
           </div>
         </div>
       </div>
