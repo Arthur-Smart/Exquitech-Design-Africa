@@ -32,14 +32,19 @@ const Navbar = () => {
       }
     >
       <div className="container flex items-center justify-between">
-        <div className="nav-left">
-          <Image
-            src={LOGO}
-            alt="Exquitech Design Africa"
-            width={200}
-            height={200}
-            className={styles.logo}
-          />
+        <div
+          onClick={handleToggle}
+          className="nav-left"
+        >
+          <Link href="/">
+            <Image
+              src={LOGO}
+              alt="Exquitech Design Africa"
+              width={200}
+              height={200}
+              className={styles.logo}
+            />
+          </Link>
         </div>
         <div className="nav-right flex items-center">
           <div

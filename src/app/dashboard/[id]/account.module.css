@@ -1,0 +1,40 @@
+.user__avatar{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user__left{
+    width:50%
+}
+
+.user__right {
+    width: 50%
+}
+
+.form__detail{
+    width:60%;
+}
+
+.input::placeholder {
+    font-size: 14px;
+}
+
+.textarea{
+    max-width:100%;
+    height:200px;
+    max-height:200px;
+}
+
+.textarea::placeholder{
+    font-size:14px;
+}
+
+.requests__wrapper{
+    width:40%;
+}
+
+.detail__cont{
+    height:max-content;
+}
