@@ -7,7 +7,7 @@ interface ThemeState {
 type ThemeAction = { type: "TOGGLE_THEME" };
 
 const INITIAL_STATE: ThemeState = {
-  isDarkMode: true,
+  isDarkMode: false,
 };
 
 export const ThemeContext = createContext<{

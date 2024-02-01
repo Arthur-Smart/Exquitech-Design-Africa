@@ -145,7 +145,7 @@ const Navbar = () => {
           </Link>
           <Link
             onClick={handleLinkToggle}
-            href="#"
+            href="/dashboard"
           >
             <button
               className={`${styles.dashboard__btn} py-3 px-10 mt-7 rounded-md border-blue-500 bg-blue-500 text-white button-border`}
