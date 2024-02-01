@@ -12,15 +12,15 @@ import Link from "next/link";
 import { ThemeContext } from "@/context/ThemeContext";
 
 const Navbar = () => {
-  const [isOpened, setIsOpend] = useState<Boolean>(false);
+  const [isOpened, setIsOpened] = useState<Boolean>(false);
   const { state, dispatch } = useContext(ThemeContext);
 
   const handleToggle = (e: React.MouseEvent<HTMLDivElement>): void => {
-    setIsOpend((prev) => !prev);
+    setIsOpened((prev) => !prev);
   };
 
   const handleLinkToggle = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    setIsOpend((prev) => !prev);
+    setIsOpened((prev) => !prev);
   };
 
   return (
@@ -33,7 +33,7 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between">
         <div
-          onClick={handleToggle}
+          onClick={() => setIsOpened(false)}
           className="nav-left"
         >
           <Link href="/">
@@ -70,7 +70,7 @@ const Navbar = () => {
             )}
           </div>
           <div
-            onClick={handleToggle}
+            onClick={handleLinkToggle}
             className="ml-3 cursor-pointer"
           >
             {state.isDarkMode == true ? (
