@@ -319,7 +319,9 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="container action py-11 flex items-center">
+      <section
+        className={`${styles.action} container  py-11 flex items-center`}
+      >
         <div
           data-aos="fade-up"
           className={`${styles.action_left}`}
