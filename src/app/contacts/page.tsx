@@ -14,11 +14,13 @@ const page = () => {
     <main
       className={
         state.isDarkMode == true
-          ? "w-full flex flex-col items-center justify-center bg-black"
-          : "w-full flex flex-col items-center justify-center"
+          ? "w-full flex flex-col items-center justify-center bg-black px-3"
+          : "w-full flex flex-col items-center justify-center px-3"
       }
     >
-      <section className="container flex items-center justify-between  h-[95vh]">
+      <section
+        className={`${styles.contact__wrapper} container flex items-center justify-between  h-[95vh]`}
+      >
         <div
           data-aos="fade-up"
           className={`${styles.contact__left}`}

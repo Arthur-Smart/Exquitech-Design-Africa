@@ -4,6 +4,7 @@
 
 .mobile__image{
     width:500px;
+    object-fit: contain;
 }
 
 .mobile__right {
@@ -78,4 +79,18 @@
 
 .mobile__service__image{
     width:500px;
+}
+
+@media screen and (max-width:830px){
+    .mobile__hero{
+        flex-direction: column-reverse;
+    }
+
+    .mobile__right {
+        width: 100%;
+    }
+
+    .mobile__left {
+        width: 100%;
+    }
 }

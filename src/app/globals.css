@@ -79,6 +79,7 @@ height:100%;
 .odoo__image{
     height:450px;
     width:450px;
+    object-fit: contain;
 }
 
 .odoo__right {
@@ -218,4 +219,82 @@ transition: all ease-in .2s;
 .whatsapp__btn:hover{
 border:1px solid gray;
 transition: all ease-in .3s;
+}
+
+@media screen and (max-width:1000px){
+    .hero__section{
+        flex-direction: column;
+    }
+        .hero__section__left {
+            width: 100%;
+        }
+    
+        .hero__section__right {
+            width: 100%;
+        }
+}
+
+@media screen and (max-width:780px){
+    .why__wrapper{
+        flex-direction: column;
+    }
+
+    .why__left {
+        width: 100%;
+    }
+
+    .why__right {
+        width: 100%;
+    }
+
+  .odoo__wrapper {
+      flex-direction: column;
+  }
+
+  .odoo__left {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .odoo__right {
+      width: 100%;
+  }
+
+  .odoo__image {
+      height: 350px;
+      width: 350px;
+      object-fit: contain;
+  }
+    .box{
+        display: none;
+    }
+}
+
+@media screen  and (max-width:470px){
+    .hero__btn{
+        flex-direction: column;
+    }
+
+    .contact__call_whatsapp{
+        flex-direction: column;
+    }
+
+    .github{
+        margin-left: 0;
+    }
+
+  .whatsapp__btn{
+    width:100%;
+    margin-left: 0;
+  }
+
+  .call__us__btn__dark{
+    width:100%
+  }
+
+  .call__us__btn{
+    width:100%;
+  }
 }

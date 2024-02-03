@@ -129,3 +129,17 @@ position: absolute;
 .action_right {
     width: 50%;
 }
+
+@media screen and (max-width:830px){
+    .erp__hero{
+        flex-direction: column;
+    }
+
+    .erp__hero__right {
+        width: 100%;
+    }
+
+    .erp__hero__left {
+        width: 100%;
+    }
+}

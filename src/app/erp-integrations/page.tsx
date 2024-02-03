@@ -12,11 +12,11 @@ const page = () => {
     <main
       className={
         state.isDarkMode == true
-          ? "w-full flex flex-col items-center justify-center py-9 bg-black"
-          : "w-full flex flex-col items-center justify-center py-9"
+          ? "w-full flex flex-col items-center justify-center py-9 bg-black px-3"
+          : "w-full flex flex-col items-center justify-center py-9 px-3"
       }
     >
-      <section className="container flex py-7">
+      <section className={`container flex py-7 ${styles.erp__hero}`}>
         <div
           data-aos="fade-right"
           className={styles.erp__hero__left}

@@ -12,11 +12,13 @@ const page = () => {
     <main
       className={
         state.isDarkMode == true
-          ? "w-full flex flex-col items-center justify-center bg-black"
-          : "w-full flex flex-col items-center justify-center"
+          ? "w-full flex flex-col items-center justify-center bg-black px-3"
+          : "w-full flex flex-col items-center justify-center px-3"
       }
     >
-      <section className="container flex  justify-between py-9 ">
+      <section
+        className={`container flex  justify-between py-9 ${styles.marketing__hero}`}
+      >
         <div
           data-aos="fade-right"
           className={`${styles.marketing__left}`}

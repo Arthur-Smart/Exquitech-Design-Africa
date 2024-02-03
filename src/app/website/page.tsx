@@ -12,13 +12,13 @@ const page = () => {
     <main
       className={
         state.isDarkMode == true
-          ? `${styles.dark__bg} flex flex-col items-center justify-center`
-          : "flex flex-col items-center justify-center"
+          ? `${styles.dark__bg} flex flex-col items-center justify-center px-3`
+          : "flex flex-col items-center justify-center px-3"
       }
     >
-      <section className="flex container py-7 website__hero">
+      <section className={`flex container py-3 ${styles.website__hero}`}>
         <div
-          data-aos="fade-right"
+          data-aos="fade-right flex "
           className={styles.website__left}
         >
           <Image
@@ -36,20 +36,20 @@ const page = () => {
           <p
             className={
               state.isDarkMode == true
-                ? "text-[13px]  mb-[3px] text-white/20"
-                : "text-[13px]  mb-[3px] text-gray-900/20"
+                ? "text-[13px]  text-start mb-[3px] text-white/20"
+                : "text-[13px]  text-start mb-[3px] text-gray-900/20"
             }
           >
             Exquitech for web development
           </p>
-          <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-4xl font-bold ">
+          <h1 className=" text-start text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-4xl font-bold ">
             How we will build your website to life
           </h1>
           <p
             className={
               state.isDarkMode == true
-                ? "text-white mt-6"
-                : "mt-6 text-zinc-500"
+                ? "text-white mt-6  text-start"
+                : "mt-6 text-zinc-500  text-start"
             }
           >
             We meticulously design and develop websites and web applications,

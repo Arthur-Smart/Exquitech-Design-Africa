@@ -13,11 +13,11 @@ const page = () => {
     <main
       className={
         state.isDarkMode == true
-          ? "flex flex-col items-center justify-center bg-black"
-          : "flex flex-col items-center justify-center"
+          ? "flex flex-col items-center justify-center bg-black px-3"
+          : "flex flex-col items-center justify-center px-3"
       }
     >
-      <section className="flex container py-7 website__hero">
+      <section className={`flex container py-7 ${styles.mobile__hero}`}>
         <div
           data-aos="fade-right"
           className={styles.mobile__left}

@@ -9,4 +9,21 @@
 .contact__image{
     width:500px;
     height:500px;
+    object-fit: contain;
+}
+
+@media screen and (max-width:830px){
+    .contact__wrapper{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .contact__left {
+        width: 100%;
+    }
+
+    .contact__right {
+        width: 100%;
+        margin-top: 10px;
+    }
 }

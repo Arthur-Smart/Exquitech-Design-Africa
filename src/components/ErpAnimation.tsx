@@ -8,7 +8,7 @@ const ErpAnimation = () => {
   return (
     <div
       style={{ height: "30%" }}
-      className="-mt-[200px]"
+      className="md:-mt-[200px]"
     >
       <Lottie
         loop={true}

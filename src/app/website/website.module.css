@@ -4,6 +4,7 @@
 
 .web__image{
     width:550px;
+    object-fit: contain;
 }
 
 .website__right {
@@ -82,4 +83,24 @@
 
 .dark__bg{
     background-color: #000;
+}
+
+@media screen and (max-width:830px){
+    .website__hero{
+        flex-direction: column-reverse;
+    }
+
+    .website__left {
+        width: 100%;
+    }
+
+        /* .web__image {
+            display: flex;
+            align-self: center !important;
+            width: 95%;
+        } */
+
+    .website__right {
+        width: 100%;
+    }
 }

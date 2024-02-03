@@ -40,8 +40,8 @@ export default function Home() {
     <main
       className={
         state.isDarkMode == true
-          ? "dark flex flex-col items-center justify-center"
-          : "flex flex-col items-center justify-center"
+          ? "dark flex flex-col items-center justify-center px-3"
+          : "flex flex-col items-center justify-center px-3"
       }
     >
       <section className="hero__section container flex mt-5 py-7">
@@ -69,18 +69,18 @@ export default function Home() {
             <span className="font-bold">websites, software, mobile apps </span>{" "}
             and provide professional designing services globally.
           </p>
-          <div className="flex flex-wrap">
+          <div className="flex hero__btn flex-wrap">
             <Link
               href=""
               download
-              className="py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
+              className="py-3 text-center px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
             >
               Get Brochure
             </Link>
             <Link
               href="https://github.com/Arthur-Smart"
               target="_blank"
-              className="github py-3 px-11 mt-2 rounded-md border-[1px] border-cyan-400 text-blue-400  ml-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white"
+              className="github text-center py-3 px-11 mt-2 rounded-md border-[1px] border-cyan-400 text-blue-400  ml-4 hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white"
             >
               Visit Github
             </Link>
@@ -132,7 +132,7 @@ export default function Home() {
 
         <h1
           data-aos="fade-up"
-          className="text-white font-bold text-4xl mt-10 leading-[60px]"
+          className="text-white font-bold text-3xl md:text-4xl mt-10 md:leading-[60px]"
         >
           Advance your business with a software solution and good <br></br>{" "}
           Digital Marketing Strategies.
@@ -367,7 +367,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container flex flex-col items-center justify-center">
+      <section className="container flex flex-col items-center justify-center mt-3">
         <h1
           data-aos="fade-up"
           className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold "
@@ -385,7 +385,7 @@ export default function Home() {
           An excellent software for your business needs, but you need an expert
           to intergrate it for you. We do Odoo implementation.
         </p>
-        <div className="odoo__wrapper mt-7 flex justify-between">
+        <div className="odoo__wrapper my-9 flex justify-between">
           <div
             data-aos="fade-up"
             className="odoo__left"
@@ -651,13 +651,13 @@ export default function Home() {
           are looking forward to see your business evolve.
         </p>
       </section>
-      <section className="call__contact__btn container flex flex-col items-center justify-center">
+      <section className="call__contact__btn container flex flex-col items-center justify-center px-4">
         <h1
           data-aos="fade-up"
           className={
             state.isDarkMode == true
-              ? "font-bold text-2xl text-white"
-              : "font-bold text-2xl text-gray-800"
+              ? "font-bold text-2xl text-white text-center"
+              : "font-bold text-2xl text-gray-800 text-center"
           }
         >
           Looking for a system, ecommerce , mobile app or digital marketing
@@ -665,20 +665,22 @@ export default function Home() {
         </h1>
         <p
           data-aos="fade-up"
-          className={state.isDarkMode == true ? "text-white" : ""}
+          className={
+            state.isDarkMode == true ? "text-white text-center" : "text-center"
+          }
         >
           Book a free consultation session with us and lets discuss on what you
           need.
         </p>
         <div
           data-aos="fade-up"
-          className="flex mt-7"
+          className="flex w-full contact__call_whatsapp mt-7"
         >
           <a href="#">
             <button
               className={
                 state.isDarkMode == true
-                  ? "call__us__btn__dark py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-blue-500 button-border"
+                  ? "call__us__btn__dark  py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-blue-500 button-border"
                   : "call__us__btn py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-blue-500 button-border"
               }
             >
