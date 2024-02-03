@@ -9,7 +9,13 @@ import { ThemeContext } from "@/context/ThemeContext";
 const page = () => {
   const { state } = useContext(ThemeContext);
   return (
-    <main className="w-full flex flex-col items-center justify-center">
+    <main
+      className={
+        state.isDarkMode == true
+          ? "w-full flex flex-col items-center justify-center bg-black"
+          : "w-full flex flex-col items-center justify-center"
+      }
+    >
       <section className="container flex items-center justify-between">
         <div className={`${styles.user__left} flex items-center`}>
           <Image
@@ -51,7 +57,7 @@ const page = () => {
       </section>
       <div className="h-[2px] mt-3 container bg-zinc-200 py-9 rounded-md bg-gradient-to-r from-indigo-700 to-indigo-500"></div>
       <section className="mt-4 container p">
-        <div>
+        <div className="w-full border-gray-200 border-[1px] rounded-md p-3 mb-3">
           <Image
             src={USERIMAGE}
             alt=""
@@ -59,7 +65,15 @@ const page = () => {
             height={100}
             className={styles.user__avatar__pic}
           />
-          <p className="font-semibold text-lg mt-2">Joshua Maina</p>
+          <p
+            className={
+              state.isDarkMode == true
+                ? "font-semibold text-lg mt-2 text-white"
+                : "font-semibold text-lg mt-2"
+            }
+          >
+            Joshua Maina
+          </p>
           <p className="font-medium text-zinc-700 ">joshua@gmail.com</p>
           <p className="mt-2 text-[15px] text-zinc-500">
             {" "}
@@ -68,10 +82,43 @@ const page = () => {
             scrambled it to make a type specimen book
           </p>
           <div className="my-2">
-            <button className="py-[4px] px-5 bg-blue-500 rounded-md text-white">
+            <button className="py-[4px] px-5 bg-blue-700/50 rounded-md text-white">
               Pending
             </button>
-            <button className="py-[4px] px-5 bg-[tomato] ml-2 rounded-md text-white">
+            <button className="py-[4px] px-5 bg-[tomato]/50 ml-2 rounded-md text-white">
+              Delete
+            </button>
+          </div>
+        </div>
+        <div className="w-full border-gray-200 border-[1px] rounded-md p-3 mb-3">
+          <Image
+            src={USERIMAGE}
+            alt=""
+            width={100}
+            height={100}
+            className={styles.user__avatar__pic}
+          />
+          <p
+            className={
+              state.isDarkMode == true
+                ? "font-semibold text-lg mt-2 text-white"
+                : "font-semibold text-lg mt-2"
+            }
+          >
+            Joshua Maina
+          </p>
+          <p className="font-medium text-zinc-700 ">joshua@gmail.com</p>
+          <p className="mt-2 text-[15px] text-zinc-500">
+            {" "}
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book
+          </p>
+          <div className="my-2">
+            <button className="py-[4px] px-5 bg-blue-700/50 rounded-md text-white">
+              Pending
+            </button>
+            <button className="py-[4px] px-5 bg-[tomato]/50 ml-2 rounded-md text-white">
               Delete
             </button>
           </div>
