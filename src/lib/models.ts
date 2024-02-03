@@ -47,7 +47,8 @@ const requestSchema = new mongoose.Schema<IRequest>({
     },
     category:{
         type:String,
-        required:true
+        required:true,
+        enum:['design', 'web', 'mobile', 'erp']
     },
     description: {
         type:String,
