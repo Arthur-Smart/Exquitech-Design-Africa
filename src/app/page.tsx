@@ -52,8 +52,8 @@ export default function Home() {
           <p
             className={
               state.isDarkMode == true
-                ? "font-black text-5xl text-desc text-white"
-                : "font-black text-5xl text-desc text-slate-800 "
+                ? "font-black text-[40px] md:text-5xl text-desc text-white"
+                : "font-black text-[40px] md:text-5xl text-desc text-slate-800 "
             }
           >
             Launch an epic website with
@@ -168,7 +168,7 @@ export default function Home() {
       <section className="services container flex flex-col items-center justify-center py-14">
         <h1
           data-aos="fade-up"
-          className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600 text-3xl font-bold "
+          className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600 text-2xl md:text-3xl font-bold "
         >
           Our service packages
         </h1>
@@ -286,10 +286,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container flex flex-col items-center justify-center py-6">
+      <section className="container flex flex-col items-center justify-center py-6 why__cont">
         <p
           data-aos="fade-up"
-          className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold "
+          className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-2xl md:text-3xl font-bold "
         >
           {" "}
           Why you need a good application
@@ -370,7 +370,7 @@ export default function Home() {
       <section className="container flex flex-col items-center justify-center mt-3">
         <h1
           data-aos="fade-up"
-          className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold "
+          className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-2xl md:text-3xl font-bold "
         >
           We also work with Odoo ERP software to serve you best
         </h1>
@@ -448,7 +448,7 @@ export default function Home() {
         </h1>
         <p
           data-aos="fade-up"
-          className="text-white"
+          className="text-white mt-2"
         >
           We craft web, mobile, and ERP apps, aligned with client NEEDS,ensuring
           smooth business operations through superior solutions.
@@ -628,7 +628,7 @@ export default function Home() {
       <section className="container flex flex-col items-center justify-center py-11">
         <h1
           data-aos="fade-up"
-          className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold "
+          className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-2xl md:text-3xl font-bold "
         >
           {" "}
           How much do we charge for our services
@@ -674,7 +674,7 @@ export default function Home() {
         </p>
         <div
           data-aos="fade-up"
-          className="flex w-full contact__call_whatsapp mt-7"
+          className="flex contact__call_whatsapp mt-7"
         >
           <a href="#">
             <button
