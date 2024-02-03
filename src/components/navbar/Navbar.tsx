@@ -70,7 +70,7 @@ const Navbar = () => {
             )}
           </div>
           <div
-            onClick={handleLinkToggle}
+            onClick={handleToggle}
             className="ml-3 cursor-pointer"
           >
             {state.isDarkMode == true ? (
