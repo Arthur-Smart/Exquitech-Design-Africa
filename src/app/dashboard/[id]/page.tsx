@@ -5,6 +5,7 @@ import styles from "./account.module.css";
 import Image from "next/image";
 import USERIMAGE from "../../../../public/images/question.jpg";
 import { ThemeContext } from "@/context/ThemeContext";
+import { createRequest } from "@/lib/actions";
 
 const page = () => {
   const { state } = useContext(ThemeContext);
@@ -67,8 +68,14 @@ const page = () => {
           Create a new Order
         </p>
         <div className={`${styles.request__wrapper} flex `}>
-          <form className={`${styles.form__detail} flex flex-col py-3 pr-3`}>
-            <select className="w-full border-gray-200 border-[1px] py-2 px-3 rounded-md outline-0">
+          <form
+            action={createRequest}
+            className={`${styles.form__detail} flex flex-col py-3 pr-3`}
+          >
+            <select
+              name="category"
+              className="w-full border-gray-200 border-[1px] py-2 px-3 rounded-md outline-0"
+            >
               <option value="design">Graphic Designing</option>
               <option value="website">Website development</option>
               <option value="mobile">Mobile apps development</option>
@@ -76,11 +83,19 @@ const page = () => {
               <option value="erp">ERP solution</option>
             </select>
             <input
+              name="phone"
               className={`${styles.input} w-full border-gray-200 border-[1px] py-2 px-3 rounded-md outline-0 mt-2`}
               type="text"
               placeholder="Enter mobile number"
             />
+            {/* <input
+              type="text"
+              value="1234"
+              name="owner"
+              style={{ display: "none" }}
+            /> */}
             <textarea
+              name="description"
               className={`${styles.textarea} w-full border-gray-200 border-[1px] py-2 px-3 rounded-md outline-0 mt-2`}
               placeholder="Describe your request"
             ></textarea>

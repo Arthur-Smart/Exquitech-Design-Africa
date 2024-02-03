@@ -1,5 +1,6 @@
 "use client";
 
+import type { Metadata } from "next";
 import React, { useContext } from "react";
 import styles from "./contact.module.css";
 import Link from "next/link";
@@ -18,7 +19,10 @@ const page = () => {
       }
     >
       <section className="container flex items-center justify-between  h-[95vh]">
-        <div className={`${styles.contact__left}`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.contact__left}`}
+        >
           <p
             className={
               state.isDarkMode == true
@@ -82,7 +86,10 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className={`${styles.contact__right} flex justify-end`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.contact__right} flex justify-end`}
+        >
           <Image
             src={CONTACTIMG}
             alt="Exquitech Design Africa Contact"

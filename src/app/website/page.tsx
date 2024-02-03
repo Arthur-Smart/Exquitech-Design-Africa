@@ -5,7 +5,6 @@ import Image from "next/image";
 import styles from "./website.module.css";
 import Link from "next/link";
 import { ThemeContext } from "@/context/ThemeContext";
-// import te from "@/styles/te";
 
 const page = () => {
   const { state } = useContext(ThemeContext);
@@ -18,7 +17,10 @@ const page = () => {
       }
     >
       <section className="flex container py-7 website__hero">
-        <div className={styles.website__left}>
+        <div
+          data-aos="fade-right"
+          className={styles.website__left}
+        >
           <Image
             src="/images/website.png"
             alt="Website Development"
@@ -27,7 +29,10 @@ const page = () => {
             className={styles.web__image}
           />
         </div>
-        <div className={`${styles.website__right} mt-11`}>
+        <div
+          data-aos="fade-left"
+          className={`${styles.website__right} mt-11`}
+        >
           <p
             className={
               state.isDarkMode == true
@@ -68,14 +73,23 @@ const page = () => {
         </div>
       </section>
       <section className="container flex flex-col items-center justify-center rounded-lg mb-[95px] bg-gradient-to-r from-indigo-700 to-indigo-500 p-[45px]">
-        <h1 className="text-white font-bold text-2xl">
+        <h1
+          data-aos="fade-up"
+          className="text-white font-bold text-2xl"
+        >
           We do it all for you !
         </h1>
-        <p className="text-white text-[15px]">
+        <p
+          data-aos="fade-up"
+          className="text-white text-[15px]"
+        >
           We empower Your Online Presence with Comprehensive Web Development
           Solutions
         </p>
-        <div className={`${styles.web__services__wrapper} container mt-9`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.web__services__wrapper} container mt-9`}
+        >
           <div className="web__service flex flex-col items-center justify-center">
             <Image
               src="./images/developer-team.svg"
@@ -130,7 +144,10 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="w-[200px] h-[3px] mt-6 bg-white"></div>
+        <div
+          data-aos="fade-up"
+          className="w-[200px] h-[3px] mt-6 bg-white"
+        ></div>
       </section>
     </main>
   );

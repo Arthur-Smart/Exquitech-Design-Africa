@@ -9,7 +9,7 @@ interface IUser {
 }
 
 interface IRequest{
-    owner: mongoose.Types.ObjectId,
+    owner?: mongoose.Types.ObjectId,
     category:string;
     description: string;
     phone: string;
@@ -43,7 +43,7 @@ const requestSchema = new mongoose.Schema<IRequest>({
     owner:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"User",
-        required:true
+        // required:true
     },
     category:{
         type:String,
@@ -60,5 +60,5 @@ const requestSchema = new mongoose.Schema<IRequest>({
     }
 }, {timestamps:true});
 
-export const User = mongoose.models.User || mongoose.model("User", userSchema);
-export const Request = mongoose.models.Request || mongoose.model("Request", requestSchema);
+export const User = mongoose.models?.User || mongoose.model("User", userSchema);
+export const Request = mongoose.models?.Request || mongoose.model("Request", requestSchema);

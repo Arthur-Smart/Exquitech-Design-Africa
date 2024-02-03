@@ -18,7 +18,10 @@ const page = () => {
       }
     >
       <section className="flex container py-7 website__hero">
-        <div className={styles.mobile__left}>
+        <div
+          data-aos="fade-right"
+          className={styles.mobile__left}
+        >
           <Image
             src="/images/phone.png"
             alt="Website Development"
@@ -27,7 +30,10 @@ const page = () => {
             className={styles.mobile__image}
           />
         </div>
-        <div className={`${styles.mobile__right}`}>
+        <div
+          data-aos="fade-left"
+          className={`${styles.mobile__right}`}
+        >
           <p
             className={
               state.isDarkMode == true
@@ -70,14 +76,23 @@ const page = () => {
         </div>
       </section>
       <section className="container flex flex-col items-center justify-center rounded-lg mb-[95px] bg-gradient-to-r from-indigo-700 to-indigo-500 p-[45px]">
-        <h1 className="text-white font-bold text-2xl">
+        <h1
+          data-aos="fade-up"
+          className="text-white font-bold text-2xl"
+        >
           We do it all for you !
         </h1>
-        <p className="text-white text-[15px]">
+        <p
+          data-aos="fade-up"
+          className="text-white text-[15px]"
+        >
           Elevating Your Mobile Experience through Comprehensive App Development
           Solutions
         </p>
-        <div className={`${styles.mobile__services__wrapper} container mt-9`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.mobile__services__wrapper} container mt-9`}
+        >
           <div className="web__service flex flex-col items-center justify-center">
             <Image
               src="./images/developer-team.svg"

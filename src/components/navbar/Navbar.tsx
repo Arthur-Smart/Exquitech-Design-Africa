@@ -143,7 +143,7 @@ const Navbar = () => {
               <h3>Contact us</h3>
             </div>
           </Link>
-          <Link
+          {/* <Link
             onClick={handleLinkToggle}
             href="/dashboard"
           >
@@ -152,7 +152,7 @@ const Navbar = () => {
             >
               <h3>Dashboard</h3>
             </button>
-          </Link>
+          </Link> */}
         </div>
       )}
     </nav>

@@ -17,7 +17,10 @@ const page = () => {
       }
     >
       <section className="container flex  justify-between py-9 ">
-        <div className={`${styles.marketing__left}`}>
+        <div
+          data-aos="fade-right"
+          className={`${styles.marketing__left}`}
+        >
           <p
             className={
               state.isDarkMode == true
@@ -52,7 +55,10 @@ const page = () => {
             Get started
           </button>
         </div>
-        <div className={`${styles.marketing__right} flex justify-end`}>
+        <div
+          data-aos="fade-left"
+          className={`${styles.marketing__right} flex justify-end`}
+        >
           <Image
             src={IMAGE}
             alt="Digital marketing"
@@ -78,7 +84,10 @@ const page = () => {
           Simple Strategies for Building Your Brand{" "}
         </h2>
         <div className={`${styles.branding__wrapper} mt-7`}>
-          <div className={`${styles.brand__container}w-full`}>
+          <div
+            data-aos="fade-up"
+            className={`${styles.brand__container}w-full`}
+          >
             <div className="flex items-center">
               {state.isDarkMode == true ? (
                 <Image
@@ -125,7 +134,10 @@ const page = () => {
               }
             ></div>
           </div>
-          <div className={`${styles.brand__container}w-full`}>
+          <div
+            data-aos="fade-up"
+            className={`${styles.brand__container}w-full`}
+          >
             <div className="flex items-center">
               {state.isDarkMode == true ? (
                 <Image
@@ -171,7 +183,10 @@ const page = () => {
               }
             ></div>
           </div>
-          <div className={`${styles.brand__container}w-full`}>
+          <div
+            data-aos="fade-up"
+            className={`${styles.brand__container}w-full`}
+          >
             <div className="flex items-center">
               {state.isDarkMode == true ? (
                 <Image
@@ -217,7 +232,10 @@ const page = () => {
               }
             ></div>
           </div>
-          <div className={`${styles.brand__container}w-full`}>
+          <div
+            data-aos="fade-up"
+            className={`${styles.brand__container}w-full`}
+          >
             <div className="flex items-center">
               {state.isDarkMode == true ? (
                 <Image
@@ -263,14 +281,11 @@ const page = () => {
               }
             ></div>
           </div>
-          <div className={`${styles.brand__container}w-full`}>
+          <div
+            data-aos="fade-up"
+            className={`${styles.brand__container}w-full`}
+          >
             <div className="flex items-center">
-              <Image
-                src="./images/radio.svg"
-                alt="Branding"
-                width={18}
-                height={18}
-              />{" "}
               {state.isDarkMode == true ? (
                 <Image
                   src="./images/radio_white.svg"
@@ -319,6 +334,7 @@ const page = () => {
       </section>
       <section className="container flex flex-col py-9  items-center justify-center">
         <h1
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? "text-2xl text-white font-bold"
@@ -328,13 +344,17 @@ const page = () => {
           Get amazing services at a price that make sense
         </h1>
         <p
+          data-aos="fade-up"
           className={
             state.isDarkMode == true ? "text-white/50" : "text-zinc-600"
           }
         >
           Affordable pricing with zero setup fees
         </p>
-        <div className={`${styles.pricing__wrapper} my-8`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.pricing__wrapper} my-8`}
+        >
           <div
             className={
               state.isDarkMode == true

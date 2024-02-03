@@ -1,5 +1,5 @@
 "use client";
-
+import type { Metadata } from "next";
 import React, { useContext } from "react";
 import styles from "./erp.module.css";
 import Image from "next/image";
@@ -17,7 +17,10 @@ const page = () => {
       }
     >
       <section className="container flex py-7">
-        <div className={styles.erp__hero__left}>
+        <div
+          data-aos="fade-right"
+          className={styles.erp__hero__left}
+        >
           <p
             className={
               state.isDarkMode == true
@@ -50,7 +53,10 @@ const page = () => {
             Request for a demo
           </button>
         </div>
-        <div className={styles.erp__hero__right}>
+        <div
+          data-aos="fade-left"
+          className={styles.erp__hero__right}
+        >
           <ErpAnimation />
         </div>
       </section>
@@ -58,6 +64,7 @@ const page = () => {
         className={`${styles.solutions__wrapper} container rounded-lg  bg-gradient-to-r from-indigo-700 to-indigo-500 py-[45px] px-4 md:px-[40px]`}
       >
         <div
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
@@ -99,6 +106,7 @@ const page = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
@@ -139,6 +147,7 @@ const page = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
@@ -181,6 +190,7 @@ const page = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
@@ -225,6 +235,7 @@ const page = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
@@ -266,6 +277,7 @@ const page = () => {
           </div>
         </div>
         <div
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
@@ -308,7 +320,10 @@ const page = () => {
         </div>
       </section>
       <section className="container action py-11 flex items-center">
-        <div className={`${styles.action_left}`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.action_left}`}
+        >
           <div
             className={`${styles.banner_holder} flex items-center justify-center cursor-pointer`}
           >
@@ -334,7 +349,10 @@ const page = () => {
             />
           </div>
         </div>
-        <div className={`${styles.action_right}`}>
+        <div
+          data-aos="fade-up"
+          className={`${styles.action_right}`}
+        >
           <h1
             className={
               state.isDarkMode == true

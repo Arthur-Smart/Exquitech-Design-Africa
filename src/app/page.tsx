@@ -21,6 +21,7 @@ import BOX from "../../public/images/box.png";
 import LottieAnimation from "@/components/LottieAnimation";
 import { useContext } from "react";
 import { ThemeContext } from "@/context/ThemeContext";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 export default function Home() {
   const { state, dispatch } = useContext(ThemeContext);
@@ -44,7 +45,10 @@ export default function Home() {
       }
     >
       <section className="hero__section container flex mt-5 py-7">
-        <div className="hero__section__left">
+        <div
+          data-aos="fade-right"
+          className="hero__section__left"
+        >
           <p
             className={
               state.isDarkMode == true
@@ -99,7 +103,10 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="hero__section__right flex justify-end">
+        <div
+          data-aos="fade-left"
+          className="hero__section__right flex justify-end"
+        >
           <Image
             width={600}
             height={700}
@@ -109,7 +116,10 @@ export default function Home() {
         </div>
       </section>
       <section className="more__info__section container rounded-lg  bg-gradient-to-r from-indigo-700 to-indigo-500 p-[45px]">
-        <div className="flex items-center">
+        <div
+          data-aos="fade-up"
+          className="flex items-center"
+        >
           <p className="text-white">What you should envision</p>
           <Image
             src={INFOICON}
@@ -120,11 +130,17 @@ export default function Home() {
           />
         </div>
 
-        <h1 className="text-white font-bold text-4xl mt-10 leading-[60px]">
+        <h1
+          data-aos="fade-up"
+          className="text-white font-bold text-4xl mt-10 leading-[60px]"
+        >
           Advance your business with a software solution and good <br></br>{" "}
           Digital Marketing Strategies.
         </h1>
-        <div className="flex items-center mt-10">
+        <div
+          data-aos="fade-up"
+          className="flex items-center mt-10"
+        >
           <Image
             src={QUESTIONiMAGE}
             alt="Exquitech Design Africa"
@@ -150,10 +166,14 @@ export default function Home() {
         />
       </section>
       <section className="services container flex flex-col items-center justify-center py-14">
-        <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600 text-3xl font-bold ">
+        <h1
+          data-aos="fade-up"
+          className="text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600 text-3xl font-bold "
+        >
           Our service packages
         </h1>
         <p
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? "mb-7 text-center px-2 text-white"
@@ -163,7 +183,10 @@ export default function Home() {
           Excellent Web apps | Portals | Mobile apps | Website | Software | ICT
           solutions and consultancy for you
         </p>
-        <div className="services_wrapper">
+        <div
+          data-aos="fade-up"
+          className="services_wrapper"
+        >
           <div
             className={
               state.isDarkMode == true
@@ -264,11 +287,15 @@ export default function Home() {
         </div>
       </section>
       <section className="container flex flex-col items-center justify-center py-6">
-        <p className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold ">
+        <p
+          data-aos="fade-up"
+          className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold "
+        >
           {" "}
           Why you need a good application
         </p>
         <p
+          data-aos="fade-up"
           className={
             state.isDarkMode == true ? "text-white text-center" : "text-center"
           }
@@ -277,10 +304,16 @@ export default function Home() {
           save time and money, and achieve better results.
         </p>
         <div className="why__wrapper flex">
-          <div className="why__left">
+          <div
+            data-aos="fade-right"
+            className="why__left"
+          >
             <LottieAnimation />
           </div>
-          <div className="why__right mt-[60px]">
+          <div
+            data-aos="fade-left"
+            className="why__right mt-[60px]"
+          >
             <div>
               <h1
                 className={
@@ -335,10 +368,14 @@ export default function Home() {
         </div>
       </section>
       <section className="container flex flex-col items-center justify-center">
-        <h1 className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold ">
+        <h1
+          data-aos="fade-up"
+          className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold "
+        >
           We also work with Odoo ERP software to serve you best
         </h1>
         <p
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? "text-center px-2 text-white"
@@ -349,7 +386,10 @@ export default function Home() {
           to intergrate it for you. We do Odoo implementation.
         </p>
         <div className="odoo__wrapper mt-7 flex justify-between">
-          <div className="odoo__left">
+          <div
+            data-aos="fade-up"
+            className="odoo__left"
+          >
             <Image
               src={ODOO}
               alt="Odoo for your business"
@@ -358,7 +398,10 @@ export default function Home() {
               className="odoo__image"
             />
           </div>
-          <div className="odoo__right">
+          <div
+            data-aos="fade-up"
+            className="odoo__right"
+          >
             <h1
               className={
                 state.isDarkMode == true
@@ -397,14 +440,23 @@ export default function Home() {
         </div>
       </section>
       <section className="container rounded-lg flex flex-col items-center justify-center bg-gradient-to-r from-indigo-700 to-indigo-500 p-[20px]">
-        <h1 className="text-white font-bold text-2xl text-center">
+        <h1
+          data-aos="fade-up"
+          className="text-white font-bold text-2xl text-center"
+        >
           Wondering how we make it all happen?
         </h1>
-        <p className="text-white">
+        <p
+          data-aos="fade-up"
+          className="text-white"
+        >
           We craft web, mobile, and ERP apps, aligned with client NEEDS,ensuring
           smooth business operations through superior solutions.
         </p>
-        <div className="processes__wrapper mt-10">
+        <div
+          data-aos="fade-up"
+          className="processes__wrapper mt-10"
+        >
           <div
             className={
               state.isDarkMode == true
@@ -574,11 +626,15 @@ export default function Home() {
         </div>
       </section>
       <section className="container flex flex-col items-center justify-center py-11">
-        <h1 className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold ">
+        <h1
+          data-aos="fade-up"
+          className="text-center px-3 text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600  text-3xl font-bold "
+        >
           {" "}
           How much do we charge for our services
         </h1>
         <p
+          data-aos="fade-up"
           className={
             state.isDarkMode
               ? "text-center text-white text-[15px]"
@@ -597,6 +653,7 @@ export default function Home() {
       </section>
       <section className="call__contact__btn container flex flex-col items-center justify-center">
         <h1
+          data-aos="fade-up"
           className={
             state.isDarkMode == true
               ? "font-bold text-2xl text-white"
@@ -606,11 +663,17 @@ export default function Home() {
           Looking for a system, ecommerce , mobile app or digital marketing
           experts?
         </h1>
-        <p className={state.isDarkMode == true ? "text-white" : ""}>
+        <p
+          data-aos="fade-up"
+          className={state.isDarkMode == true ? "text-white" : ""}
+        >
           Book a free consultation session with us and lets discuss on what you
           need.
         </p>
-        <div className="flex mt-7">
+        <div
+          data-aos="fade-up"
+          className="flex mt-7"
+        >
           <a href="#">
             <button
               className={
