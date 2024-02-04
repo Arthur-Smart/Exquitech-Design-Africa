@@ -52,8 +52,8 @@ export default function Home() {
           <p
             className={
               state.isDarkMode == true
-                ? "font-black text-[40px] md:text-5xl text-desc text-white"
-                : "font-black text-[40px] md:text-5xl text-desc text-slate-800 "
+                ? "font-black text-5xl text-desc text-white"
+                : "font-black text-5xl text-desc text-slate-800 "
             }
           >
             Launch an epic website with
