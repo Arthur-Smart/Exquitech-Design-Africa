@@ -81,7 +81,7 @@ const page = () => {
         </h1>
         <p
           data-aos="fade-up"
-          className="text-white text-[15px]"
+          className="text-white text-[15px] text-center"
         >
           We empower Your Online Presence with Comprehensive Web Development
           Solutions

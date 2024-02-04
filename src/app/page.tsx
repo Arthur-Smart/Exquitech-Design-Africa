@@ -312,7 +312,7 @@ export default function Home() {
           </div>
           <div
             data-aos="fade-left"
-            className="why__right mt-[60px]"
+            className="why__right md:mt-[60px]"
           >
             <div>
               <h1
@@ -427,15 +427,18 @@ export default function Home() {
               develop addition modules that adds to the functionalities of the
               ERP systems.
             </p>
-            <button
-              className={
-                state.isDarkMode == true
-                  ? "odoo__btn__dark mt-[30px] py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
-                  : "odoo__btn mt-[30px] py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
-              }
-            >
-              Get started
-            </button>
+            <Link href="/contacts">
+              {" "}
+              <button
+                className={
+                  state.isDarkMode == true
+                    ? "odoo__btn__dark mt-[30px] py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
+                    : "odoo__btn mt-[30px] py-3 px-10 mt-2 rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
+                }
+              >
+                Get started
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -460,8 +463,8 @@ export default function Home() {
           <div
             className={
               state.isDarkMode == true
-                ? "process__wrapper flex items-start bg-black text-white p-3 md:p-7 flex rounded-md"
-                : "process__wrapper flex items-start bg-white p-3 md:p-7 flex rounded-md"
+                ? "process__wrapper flex items-start bg-black text-white p-2 md:p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-2 md:p-7 flex rounded-md"
             }
           >
             <Image
@@ -487,8 +490,8 @@ export default function Home() {
           <div
             className={
               state.isDarkMode == true
-                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
-                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+                ? "process__wrapper flex items-start bg-black text-white p-2 md:p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-2 md:p-7 flex rounded-md"
             }
           >
             <Image
@@ -515,8 +518,8 @@ export default function Home() {
           <div
             className={
               state.isDarkMode == true
-                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
-                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+                ? "process__wrapper flex items-start bg-black text-white p-2 md:p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-2 md:p-7 flex rounded-md"
             }
           >
             <Image
@@ -544,8 +547,8 @@ export default function Home() {
           <div
             className={
               state.isDarkMode == true
-                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
-                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+                ? "process__wrapper flex items-start bg-black text-white p-2 md:p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-2 md:p-7 flex rounded-md"
             }
           >
             <Image
@@ -571,8 +574,8 @@ export default function Home() {
           <div
             className={
               state.isDarkMode == true
-                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
-                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+                ? "process__wrapper flex items-start bg-black text-white p-2 md:p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-2 md:p-7 flex rounded-md"
             }
           >
             <Image
@@ -598,8 +601,8 @@ export default function Home() {
           <div
             className={
               state.isDarkMode == true
-                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
-                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+                ? "process__wrapper flex items-start bg-black text-white p-2 md:p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-2 md:p-7 flex rounded-md"
             }
           >
             <Image
@@ -676,7 +679,7 @@ export default function Home() {
           data-aos="fade-up"
           className="flex contact__call_whatsapp mt-7"
         >
-          <a href="#">
+          <Link href="tel:+254742068914">
             <button
               className={
                 state.isDarkMode == true
@@ -686,16 +689,21 @@ export default function Home() {
             >
               Call us now
             </button>
-          </a>
-          <button
-            className={
-              state.isDarkMode
-                ? "py-3 px-10 mt-2 rounded-md whatsapp__btn ml-3 text-white"
-                : "py-3 px-10 mt-2 rounded-md whatsapp__btn ml-3"
-            }
+          </Link>
+          <Link
+            target="_blank"
+            href="https://wa.me/254742068914?text=I'm%20interested%20in%20your%20car%20for%20sale"
           >
-            or whatsApp us now
-          </button>
+            <button
+              className={
+                state.isDarkMode
+                  ? "py-3 px-10 mt-2 rounded-md whatsapp__btn ml-3 text-white"
+                  : "py-3 px-10 mt-2 rounded-md whatsapp__btn ml-3"
+              }
+            >
+              or whatsApp us now
+            </button>
+          </Link>
         </div>
         <Image
           src={BOX}

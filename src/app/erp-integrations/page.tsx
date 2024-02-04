@@ -67,8 +67,8 @@ const page = () => {
           data-aos="fade-up"
           className={
             state.isDarkMode == true
-              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
-              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+              ? `${styles.solution} items-start flex bg-black p-3 md:p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-3 md:p-7 flex rounded-md`
           }
         >
           <Image
@@ -109,8 +109,8 @@ const page = () => {
           data-aos="fade-up"
           className={
             state.isDarkMode == true
-              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
-              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+              ? `${styles.solution} items-start flex bg-black p-3 md:p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-3 md:p-7 flex rounded-md`
           }
         >
           <Image
@@ -150,8 +150,8 @@ const page = () => {
           data-aos="fade-up"
           className={
             state.isDarkMode == true
-              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
-              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+              ? `${styles.solution} items-start flex bg-black p-3 md:p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-3 md:p-7 flex rounded-md`
           }
         >
           <Image
@@ -193,8 +193,8 @@ const page = () => {
           data-aos="fade-up"
           className={
             state.isDarkMode == true
-              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
-              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+              ? `${styles.solution} items-start flex bg-black p-3 md:p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-3 md:p-7 flex rounded-md`
           }
         >
           <Image
@@ -238,8 +238,8 @@ const page = () => {
           data-aos="fade-up"
           className={
             state.isDarkMode == true
-              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
-              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+              ? `${styles.solution} items-start flex bg-black p-3 md:p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-3 md:p-7 flex rounded-md`
           }
         >
           <Image
@@ -280,8 +280,8 @@ const page = () => {
           data-aos="fade-up"
           className={
             state.isDarkMode == true
-              ? `${styles.solution} items-start flex bg-black p-7 flex rounded-md`
-              : `${styles.solution} items-start flex bg-white p-7 flex rounded-md`
+              ? `${styles.solution} items-start flex bg-black p-3 md:p-7 flex rounded-md`
+              : `${styles.solution} items-start flex bg-white p-3 md:p-7 flex rounded-md`
           }
         >
           <Image
