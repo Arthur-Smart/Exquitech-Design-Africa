@@ -451,7 +451,7 @@ export default function Home() {
         </h1>
         <p
           data-aos="fade-up"
-          className="text-white mt-2"
+          className="text-white mt-2 text-center"
         >
           We craft web, mobile, and ERP apps, aligned with client NEEDS,ensuring
           smooth business operations through superior solutions.
