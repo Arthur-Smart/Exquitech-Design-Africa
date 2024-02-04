@@ -692,7 +692,7 @@ export default function Home() {
           </Link>
           <Link
             target="_blank"
-            href="https://wa.me/254742068914?text=I'm%20interested%20in%20your%20car%20for%20sale"
+            href="https://wa.me/254742068914?text=I'm%20interested%20in%20your%20software%20for%20services"
           >
             <button
               className={
