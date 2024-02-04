@@ -12,7 +12,9 @@ const Footer = () => {
             Exquitech Design Africa &copy;2024, All rights reserved
           </p>
         </div>
-        <p className="text-white text-sm">Tel: 0742068914 | 0103245172</p>
+        <p className="text-white text-sm footer__phone">
+          Tel: 0742068914 | 0103245172
+        </p>
       </div>
     </div>
   );
