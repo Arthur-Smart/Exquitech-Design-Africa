@@ -115,7 +115,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="more__info__section container rounded-lg  bg-gradient-to-r from-indigo-700 to-indigo-500 p-[45px]">
+      <section className="more__info__section container rounded-lg  bg-gradient-to-r from-indigo-700 to-indigo-500 p-4 md:p-[45px]">
         <div
           data-aos="fade-up"
           className="flex items-center"
@@ -139,7 +139,7 @@ export default function Home() {
         </h1>
         <div
           data-aos="fade-up"
-          className="flex items-center mt-10"
+          className="flex flex-col md:flex-row items-center mt-10"
         >
           <Image
             src={QUESTIONiMAGE}
