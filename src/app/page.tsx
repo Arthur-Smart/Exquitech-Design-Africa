@@ -460,8 +460,8 @@ export default function Home() {
           <div
             className={
               state.isDarkMode == true
-                ? "process__wrapper flex items-start bg-black text-white p-7 flex rounded-md"
-                : "process__wrapper flex items-start bg-white p-7 flex rounded-md"
+                ? "process__wrapper flex items-start bg-black text-white p-3 md:p-7 flex rounded-md"
+                : "process__wrapper flex items-start bg-white p-3 md:p-7 flex rounded-md"
             }
           >
             <Image
