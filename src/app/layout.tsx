@@ -15,6 +15,14 @@ export const metadata: Metadata = {
   title: "Exquitech Design Africa",
   description:
     "The next generation software engineers for all your business software solutions.",
+  other: {
+    "theme-color": "#0d1117",
+    "twitter:image": "https://ibb.co/JnDwv5g/Front-Office-Display.jpg",
+    "twitter:card": "summary_large_image",
+    "og:url": "agrihub.vercel.com",
+    "og:image": "https://ibb.co/JnDwv5g/Front-Office-Display.jpg",
+    "og:type": "website",
+  },
 };
 
 export default function RootLayout({
