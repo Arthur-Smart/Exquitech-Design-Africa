@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import ContextWrapper from "@/components/ContextWrapper";
 import { AOSInit } from "@/lib/aos";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AOSInit />
+      <GoogleAnalytics />
       <body className={`${poppins.className}`}>
         <ContextWrapper>
           <Navbar />
